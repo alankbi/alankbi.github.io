@@ -4,22 +4,15 @@
 }
 #wrapper{
 	text-align: center;
-	/*width: 100%;
-	height: 100%;
-	margin: auto;*/
 }
 a{
-	color: #006699;/*rgb(52, 152, 220);*/
+	color: #006699;
 	text-decoration: none;
 	margin-right: 3px;
 	margin-left: 3px;
 }
 a:hover{
-	color: #004466;/*rgb(32, 122, 190);*/
-}
-
-body{
-	background-image: url("file:///Users/AlanBi/Desktop/App%20Development/Websites/MyWebsiteImage1.jpg")
+	color: #004466;
 }
 
 #headtext{
@@ -54,8 +47,8 @@ body{
 	border-style: none;
 	outline: 0px;
 	border-radius: 0px;
-	background-color: #006699;/*rgb(52, 152, 220);*/ /*rgb(70, 175, 245);*/
-	border-color: rgb(42, 142, 210);/*rgb(60, 163, 232);*/
+	background-color: #006699;
+	border-color: rgb(42, 142, 210);
 	padding: 12px 30px;
 	margin-right: 1px;
 	margin-left: 1px;
@@ -64,7 +57,6 @@ body{
 	width: 150px;
 }
 .button:hover{
-	/*border-color: rgb(200, 200, 200);*/
-	background-color: lightgray;
-	color: #006699;/*rgb(52, 152, 220)*/
+	background-color: #DDDDDD;
+	color: #006699;
 }
