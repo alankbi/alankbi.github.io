@@ -1,26 +1,31 @@
-*{
+* {
 	font-family: Tahoma, Geneva, sans-serif;
 	font-weight: normal;
 }
-#wrapper{
+
+body {
+    color: $main-font-color;
+}
+
+#wrapper {
 	text-align: center;
 }
-a{
+a {
 	color: #006699;
 	text-decoration: none;
 	margin-right: 3px;
 	margin-left: 3px;
 }
-a:hover{
+a:hover {
 	color: #004466;
 }
 
-#headtext{
+#headtext {
 	margin-top: 80px;
 	margin-bottom: 60px;
 }
 
-#contact{
+#contact {
 	margin-bottom: 25px;
 	border-style: solid;
 	border-color: gray;
@@ -31,19 +36,19 @@ a:hover{
 	margin-left: auto;
 	margin-right: auto;
 }
-.contactmethods{
+.contactmethods {
 	margin: 6px;
 	display: inline;
 }
 
-#aboutme{
+#aboutme {
 	margin-top: 70px;
 	height: 200px;
 	margin-left: 15%;
 	margin-right: 15%;
 }
 
-.button{
+.button {
 	border-style: none;
 	outline: 0px;
 	border-radius: 0px;
@@ -56,7 +61,7 @@ a:hover{
 	color: lightgray;
 	width: 150px;
 }
-.button:hover{
+.button:hover {
 	background-color: #DDDDDD;
 	color: #006699;
 }
