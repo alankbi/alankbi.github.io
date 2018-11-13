@@ -2,17 +2,16 @@
 layout: default
 ---
 <div class="container">
-	<div class="col-4 fixed-top sidebar">
-		<h1 class="font-weight-bold text-center">Alan Bi</h1> 
-	</div>
-	<div class="row justify-content-end">
-		<div class="col-8 info">
+	{% include sidebar.html %}
+	<div class="row justify-content-end about-container">
+		<div class="col-8">
 			{% include about.html %}
 		</div>
 	</div>
-	<div class="row justify-content-end">
-		<div class="col-8 info">
-			<div class="text-center projects">
+	<div class="row justify-content-end projects-container">
+		<div class="col-8">
+			<h1>Projects</h1>
+			<div class="text-center">
 				{% for project in site.data.projects %}
 					{% include project.html
 						title=project.title
