@@ -1,67 +1,13 @@
 * {
-	font-family: Tahoma, Geneva, sans-serif;
-	font-weight: normal;
+	font-family: Roboto;
+
 }
 
 body {
-    color: $main-font-color;
-}
-
-#wrapper {
+	color: $main-font-color;
 	text-align: center;
 }
-a {
-	color: #006699;
-	text-decoration: none;
-	margin-right: 3px;
-	margin-left: 3px;
-}
-a:hover {
-	color: #004466;
-}
 
-#headtext {
-	margin-top: 80px;
-	margin-bottom: 60px;
-}
-
-#contact {
-	margin-bottom: 25px;
-	border-style: solid;
-	border-color: gray;
-	width: 430px;
-	border-width: 0px;
-	padding-top: 8px;
-	padding-bottom: 9px;
-	margin-left: auto;
-	margin-right: auto;
-}
-.contactmethods {
-	margin: 6px;
-	display: inline;
-}
-
-#aboutme {
-	margin-top: 70px;
-	height: 200px;
-	margin-left: 15%;
-	margin-right: 15%;
-}
-
-.button {
-	border-style: none;
-	outline: 0px;
-	border-radius: 0px;
-	background-color: #006699;
-	border-color: rgb(42, 142, 210);
-	padding: 12px 30px;
-	margin-right: 1px;
-	margin-left: 1px;
-	font-size: 14px;
-	color: lightgray;
-	width: 150px;
-}
-.button:hover {
-	background-color: #DDDDDD;
-	color: #006699;
+.contact-info {
+	margin-top: 20vh;
 }
