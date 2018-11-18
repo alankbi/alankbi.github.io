@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<div class="container">
+<div class="container mb-5">
 	{% include sidebar.html %}
 	<div class="row justify-content-end about-container">
 		<div class="col-8">
@@ -10,8 +10,8 @@ layout: default
 	</div>
 	<div class="row justify-content-end projects-container">
 		<div class="col-8">
-			<h1>Projects</h1>
-			<div class="text-center">
+			<h1>Projects</h1><hr>
+			<div class="body-info">
 				{% for project in site.data.projects %}
 					{% include project.html
 						title=project.title

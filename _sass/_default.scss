@@ -7,6 +7,14 @@ body {
 	color: $main-font-color;
 }
 
+hr {
+	margin-bottom: 8vh !important;
+}
+
+.about-container {
+	height: 100vh;
+}
+
 .sidebar {
 	margin-top: 20vh;
 }
@@ -17,4 +25,8 @@ body {
 
 .about-container {
 	margin-top: 20vh;
+}
+
+.body-info {
+	margin-left: 4vw;
 }

@@ -1,0 +1,19 @@
+.projects-container {
+    a {
+        display: inline-block;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+}
+
+.project {
+    width: 250px;
+    box-shadow: 0px 0px 2px 2px $project-shadow-color;
+    padding: 4px;
+}
+
+.project-image {
+    max-width: 100%;
+}
