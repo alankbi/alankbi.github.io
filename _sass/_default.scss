@@ -1,0 +1,24 @@
+* {
+	font-family: Roboto;
+	color: $main-font-color;
+}
+
+hr {
+	margin-bottom: 8vh !important;
+}
+
+.about-container {
+	height: 100vh;
+	margin-top: 20vh;
+}
+
+.projects-container {
+    a {
+		display: inline-block;
+		vertical-align: top;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+}
