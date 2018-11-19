@@ -1,4 +1,16 @@
-- title: Project title
-  description: Text description of project
+- title: ML Models
+  description: "Python implementations of common machine learning models."
+  image: /assets/images/project-images/ml_algorithms.png
+  link: https://github.com/alankbi/machine-learning-algorithms
+- title: Gravity Sim
+  description: "A to-scale simulation of planets in a solar system.<br><br>"
+  image: /assets/images/project-images/gravity_simulation.png
+  link: https://github.com/alankbi/gravity-simulation
+- title: QuickNews
+  description: "News app that clusters similar articles together for a quick, daily read." 
+  image: /assets/images/project-images/quicknews.png
+  link: https://github.com/alankbi/news-app
+- title: TaskList
+  description: "My first iOS app: a simple to-do list.<br><br>"
   image: /assets/images/project-images/tasklist.png
-  link: link to more info
+  link: https://github.com/alankbi/TaskList

@@ -1,9 +1,5 @@
 * {
 	font-family: Roboto;
-
-}
-
-body {
 	color: $main-font-color;
 }
 
@@ -13,20 +9,16 @@ hr {
 
 .about-container {
 	height: 100vh;
-}
-
-.sidebar {
 	margin-top: 20vh;
 }
 
-.contact-buttons {
-	margin-left: 10vw;
-}
+.projects-container {
+    a {
+		display: inline-block;
+		vertical-align: top;
+    }
 
-.about-container {
-	margin-top: 20vh;
-}
-
-.body-info {
-	margin-left: 4vw;
+    a:hover {
+        text-decoration: none;
+    }
 }
