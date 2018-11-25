@@ -3,13 +3,25 @@
 	color: $main-font-color;
 }
 
+body {
+	min-width: 700px;
+}
+
 hr {
 	margin-bottom: 8vh !important;
 }
 
 .about-container {
-	height: 100vh;
+	height: 80vh;
 	margin-top: 20vh;
+}
+
+.col-3 {
+	min-width: 300px;
+}
+
+.col-9 {
+	min-width: 400px;
 }
 
 .projects-container {
