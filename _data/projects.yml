@@ -2,6 +2,14 @@
   description: "Python implementations of common machine learning models."
   image: /assets/images/project-images/ml_algorithms.png
   link: https://github.com/alankbi/machine-learning-algorithms
+- title: My Continents
+  description: "Cross-platform mobile app made for Continents Academy."
+  image: /assets/images/project-images/continents.png
+  link: https://github.com/alankbi/machine-learning-algorithms
+- title: Bubble Game
+  description: "Educational game made using Unity for Puppetry Arts.<br><br>"
+  image: /assets/images/project-images/bubble_game.png
+  link: https://github.com/alankbi/gravity-simulation
 - title: Gravity Sim
   description: "A to-scale simulation of planets in a solar system.<br><br>"
   image: /assets/images/project-images/gravity_simulation.png
