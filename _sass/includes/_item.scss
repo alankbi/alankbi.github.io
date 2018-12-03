@@ -2,12 +2,21 @@
     width: 18vw;
     min-width: 200px;
     box-shadow: 0px 0px 2px 2px $item-shadow-color;
+    transition: box-shadow 0.3s;
     margin: 8px;
+}
+
+.item:hover {
+    box-shadow: 0px 0px 4px 4px $item-shadow-color;
+    .item-header {
+        background-color: $item-header-color-hover;
+    }
 }
 
 .item-header {
     padding: 8px;
     background-color: $item-header-color;
+    transition: background-color 0.3s;
     color: $main-font-color;
     text-align: center;
 }
