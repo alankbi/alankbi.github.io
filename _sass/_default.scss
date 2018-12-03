@@ -12,7 +12,7 @@ hr {
 }
 
 .about-container {
-	height: 80vh;
+	margin-bottom: 20vh;
 	margin-top: 20vh;
 }
 
@@ -24,8 +24,10 @@ hr {
 	min-width: 400px;
 }
 
-.projects-container {
-    a {
+.experience-container, .projects-container {
+	margin-bottom: 20vh;
+
+	a {
 		display: inline-block;
 		vertical-align: top;
     }

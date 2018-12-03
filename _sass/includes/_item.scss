@@ -1,17 +1,17 @@
-.project {
+.item {
     width: 18vw;
     min-width: 200px;
-    box-shadow: 0px 0px 2px 2px $project-shadow-color;
+    box-shadow: 0px 0px 2px 2px $item-shadow-color;
     margin: 8px;
 }
 
-.project-header {
+.item-header {
     padding: 8px;
-    background-color: $project-header-color;
+    background-color: $item-header-color;
     color: $main-font-color;
     text-align: center;
 }
 
-.project-image {
+.item-image {
     max-width: 100%;
 }
