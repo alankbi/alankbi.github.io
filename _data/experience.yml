@@ -1,4 +1,8 @@
-- title: Work Experience
-  description: "Work description"
-  image: /assets/images/experience-images/work_experience.png
-  link: https://google.com
+- title: Expedia Group
+  description: "Interned on the Air Experience Team as a full-stack developer."
+  image: /assets/images/experience-images/expedia.png
+  link: https://docs.google.com/presentation/d/1ljYnmAM7By8gfDnNmaPnVGYLrkUY_q5yclxtgdL2i5g/edit?usp=sharing
+- title: UW CSE
+  description: "Research intern helping with a Ph.D. student's project called Casper."
+  image: /assets/images/experience-images/uwashington.png
+  link: https://casper.uwplse.org
