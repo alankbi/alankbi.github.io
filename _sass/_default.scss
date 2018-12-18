@@ -5,23 +5,13 @@
 
 body {
 	min-width: 700px;
+	/*background-image: url("../../assets/images/background.png");
+	background-repeat: no-repeat;
+	background-size: cover;*/
 }
 
 hr {
 	margin-bottom: 8vh !important;
-}
-
-.about-container {
-	margin-bottom: 20vh;
-	margin-top: 20vh;
-}
-
-.col-3 {
-	min-width: 300px;
-}
-
-.col-9 {
-	min-width: 400px;
 }
 
 .experience-container, .projects-container {
@@ -35,4 +25,10 @@ hr {
     a:hover {
         text-decoration: none;
     }
+}
+
+.name {
+	margin-top: 10vh;
+	margin-bottom: 5vh;
+	font-size: 4vw;
 }
