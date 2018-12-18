@@ -4,10 +4,10 @@
 }
 
 body {
-	min-width: 700px;
 	/*background-image: url("../../assets/images/background.png");
 	background-repeat: no-repeat;
 	background-size: cover;*/
+	padding: 0 2vw 0 2vw;
 }
 
 hr {
@@ -28,7 +28,11 @@ hr {
 }
 
 .name {
-	margin-top: 10vh;
-	margin-bottom: 5vh;
-	font-size: 4vw;
+	margin-top: 8vh;
+	margin-bottom: 4vh;
+	font-size: 60px;
+}
+
+.row {
+	text-align: center;
 }
