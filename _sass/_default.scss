@@ -4,24 +4,14 @@
 }
 
 body {
-	min-width: 700px;
+	/*background-image: url("../../assets/images/background.png");
+	background-repeat: no-repeat;
+	background-size: cover;*/
+	padding: 0 2vw 0 2vw;
 }
 
 hr {
 	margin-bottom: 8vh !important;
-}
-
-.about-container {
-	margin-bottom: 20vh;
-	margin-top: 20vh;
-}
-
-.col-3 {
-	min-width: 300px;
-}
-
-.col-9 {
-	min-width: 400px;
 }
 
 .experience-container, .projects-container {
@@ -35,4 +25,16 @@ hr {
     a:hover {
         text-decoration: none;
     }
+}
+
+.name {
+	margin-top: 8vh;
+	margin-bottom: 4vh;
+	//margin-left: 20px;
+	font-size: 60px;
+	text-align: center;
+}
+
+.row {
+	text-align: center;
 }

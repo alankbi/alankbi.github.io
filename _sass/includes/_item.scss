@@ -1,26 +1,29 @@
 .item {
-    width: 18vw;
+    width: 24vw;
     min-width: 200px;
+    max-width: 450px;
     box-shadow: 0px 0px 2px 2px $item-shadow-color;
-    transition: box-shadow 0.3s;
     margin: 8px;
+    border-radius: 10px;
+    margin-top: 1000px;
+    transition: box-shadow 0.5s, margin-top 1.2s;
 }
 
 .item:hover {
-    box-shadow: 0px 0px 6px 6px $item-shadow-color;
-    .item-header {
-        background-color: $item-header-color-hover;
-    }
+    box-shadow: 0px 0px 10px 10px $item-shadow-color;
 }
 
 .item-header {
     padding: 8px;
     background-color: $item-header-color;
-    transition: background-color 0.3s;
     color: $main-font-color;
     text-align: center;
+    border-radius: 0 0 10px 10px;
+    height: 180px;
 }
 
 .item-image {
     max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px 10px 0 0;
 }

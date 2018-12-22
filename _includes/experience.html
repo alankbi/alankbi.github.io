@@ -1,10 +1,7 @@
-<h1>Intern Experience</h1><hr>
-<div class="body-info">
-    {% for experience in site.data.experience %}
-        {% include item.html
-            title=experience.title
-            description=experience.description
-            image=experience.image
-            link=experience.link %}
-    {% endfor %}
-</div>
+{% for experience in site.data.experience %}
+    {% include item.html
+        title=experience.title
+        description=experience.description
+        image=experience.image
+        link=experience.link %}
+{% endfor %}
