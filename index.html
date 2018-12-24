@@ -2,11 +2,12 @@
 layout: default
 ---
 <div class="container-fluid mb-5">
-	<h1 class="name font-weight-bold">ALAN BI</h1>
-	<div class="row projects-container" id="projects-container">
+	{% include header.html %}
+	<div class="row item-container">
 		<div class="col-12">
 			{% include experience.html %}
 			{% include projects.html %}
 		</div>
 	</div>
+	{% include footer.html %}
 </div>
