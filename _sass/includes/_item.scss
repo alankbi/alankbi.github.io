@@ -1,16 +1,16 @@
 .item {
-    width: 24vw;
+    width: 20vw;
     min-width: 200px;
-    max-width: 450px;
-    box-shadow: 0px 0px 2px 2px $item-shadow-color;
+    max-width: 300px;
+    box-shadow: 0px 0px 4px 1px $item-shadow-color;
     margin: 8px;
-    border-radius: 10px;
+    border-radius: 2px;
     margin-top: 1000px;
-    transition: box-shadow 0.5s, margin-top 1.2s;
+    transition: box-shadow 0.3s, margin-top 1.2s;
 }
 
 .item:hover {
-    box-shadow: 0px 0px 10px 10px $item-shadow-color;
+    box-shadow: 0px 2px 4px 3px $item-shadow-color;
 }
 
 .item-header {
@@ -18,12 +18,12 @@
     background-color: $item-header-color;
     color: $main-font-color;
     text-align: center;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 2px 2px;
     height: 180px;
 }
 
 .item-image {
     max-width: 100%;
     max-height: 100%;
-    border-radius: 10px 10px 0 0;
+    border-radius: 2px 2px 0 0;
 }
