@@ -1,0 +1,7 @@
+{% for blog in site.data.blog_posts %}
+    {% include item.html
+        title=blog.title
+        description=blog.description
+        image=blog.image
+        link=blog.link %}
+{% endfor %}
