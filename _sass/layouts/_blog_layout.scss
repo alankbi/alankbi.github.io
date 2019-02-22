@@ -3,7 +3,8 @@
 }
 
 .blog-container {
-    width: 70vw;
+    width: 75%;
+    transition: width 0.5s;
 }
 
 .blog-date-text {
