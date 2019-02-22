@@ -6,6 +6,15 @@
     background: #f8f8f8;
     width: 20vw;
     min-width: 180px;
+
+    a {
+        color: $main-font-color;
+    }
+    
+    a:hover {
+        color: $main-font-color;
+        text-decoration: none;
+    }
 }
 
 .sidebar {

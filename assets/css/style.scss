@@ -4,7 +4,10 @@
 @import 'colors';
 
 @import 'default';
+@import 'includes/blog_header';
 @import 'includes/footer';
 @import 'includes/header';
 @import 'includes/item';
 @import 'includes/sidebar';
+
+@import 'layouts/blog_layout';
