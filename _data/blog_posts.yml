@@ -1,4 +1,4 @@
-- title: My first ever blog post!
-  image: /assets/images/blog-images/expedia.png
-  link: /blog/first-blog-post/
+- title: My first ever blog post
+  image: /assets/images/blog-images/2019/hello.jpg
+  link: /blog/2019-02-22/first-blog-post/
   date: February 21, 2019

@@ -21,10 +21,14 @@
 .sidebar {
     margin-top: 10vh;
     margin-left: 15%;
+    margin-right: 10%;
 
     div, h1, h3 {
-        line-height: 30px;
         margin-bottom: 30px;
+    }
+
+    br {
+        line-height: 35px;
     }
 }
 

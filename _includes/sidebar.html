@@ -14,7 +14,15 @@
         </div><br>
         <div class="related-posts">
             <h3 class="font-weight-bold">Related Links</h3>
-            <p>Nothing so far!</p>
+            {% if page.links %}
+                {% assign links = page.links | split: '^^^' %}
+                {% for link in links %}
+                    {% assign temp = link | split: '|' %}
+                    <a class="font-weight-bold" href="{{ temp | first}}">{{ temp | last }}</a><br>
+                {% endfor %}
+            {% else %}
+                <p>None!</p>
+            {% endif %}
         </div>
     </div>
 </div>
