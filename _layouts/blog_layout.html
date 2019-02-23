@@ -14,12 +14,16 @@
                 <div class="blog-title">
                     <h1 class="blog-title-text">{{ page.title }}</h1>
                 </div>
-                <div class="blog-date">
-                    <p class="blog-date-text">Published on {{ page.date | date: "%B %-d, %Y"}}</p>
-                </div>
-                <div class="blog-image">
-                    <img src="{{ page.image }}" alt="Blog header image">
-                </div>
+                {% if page.date %}
+                    <div class="blog-date">
+                        <p class="blog-date-text">Published on {{ page.date | date: "%B %-d, %Y"}}</p>
+                    </div>
+                {% endif %}
+                {% if page.date %}
+                    <div class="blog-image">
+                        <img src="{{ page.image }}" alt="Blog header image">
+                    </div>
+                {% endif %}
                 <div class="blog-content">
                     {{ content }}
                 </div>

@@ -11,18 +11,17 @@
             <a class="sidebar-section-link" href="/projects">Projects</a><br>
             <a class="sidebar-section-link" href="/experience">Experience</a><br>
             <a class="sidebar-section-link" href="/blog/">Blog</a><br>
+            <a class="sidebar-section-link" href="/about">About</a><br>
         </div><br>
-        <div class="related-posts">
-            <h3 class="font-weight-bold">Related Links</h3>
-            {% if page.links %}
+        {% if page.links %}
+            <div class="related-posts">
+                <h3 class="font-weight-bold">Related Links</h3>
                 {% assign links = page.links | split: '^^^' %}
                 {% for link in links %}
                     {% assign temp = link | split: '|' %}
                     <a class="font-weight-bold" href="{{ temp | first}}">{{ temp | last }}</a><br>
                 {% endfor %}
-            {% else %}
-                <p>None!</p>
-            {% endif %}
-        </div>
+            </div>
+        {% endif %}
     </div>
 </div>
