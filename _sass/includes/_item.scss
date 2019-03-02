@@ -20,6 +20,7 @@
     text-align: center;
     border-radius: 0 0 2px 2px;
     height: 180px;
+    position: relative;
 }
 
 .item-image {
@@ -33,4 +34,5 @@
     bottom: 2px;
     left: 0;
     right: 0;
+    margin: 0;
 }
