@@ -1,17 +1,36 @@
 .blog-content {
     font-size: large;
+    line-height: 30px;
+
+    * {
+        font-family: Lato, sans-serif !important;
+    }
 }
 
 .blog-container {
     width: 62%;
     transition: width 0.5s;
     margin: 100px 5%;
+
+    h1, h2, h3, h4, h5, h6 {
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+
+    img {
+        width: 100%;
+        outline: solid;
+        outline-width: 1px;
+        outline-color: #eee;
+    }
 }
 
 .blog-date-text {
     margin-bottom: 4px;
     font-style: italic;
     color: #555;
+    float: left;
+    line-height: 35px;
 }
 
 .blog-image {
@@ -30,4 +49,12 @@
 
 .blog-title-text {
     font-size: 55px;
+}
+
+.medium-link {
+    float: right;
+}
+
+.medium-icon {
+    font-size: 30px;
 }
