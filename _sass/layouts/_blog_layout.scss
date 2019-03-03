@@ -1,8 +1,15 @@
 .blog-content {
     font-size: large;
     line-height: 30px;
+
     * {
         font-family: Lato, sans-serif !important;
+    }
+
+    img {
+        outline: solid;
+        outline-width: 1px;
+        outline-color: #eee;
     }
 }
 
@@ -14,6 +21,10 @@
     h1, h2, h3, h4, h5, h6 {
         margin-top: 60px;
         margin-bottom: 30px;
+    }
+
+    img {
+        width: 100%;
     }
 }
 
