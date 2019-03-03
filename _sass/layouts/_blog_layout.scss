@@ -5,12 +5,6 @@
     * {
         font-family: Lato, sans-serif !important;
     }
-
-    img {
-        outline: solid;
-        outline-width: 1px;
-        outline-color: #eee;
-    }
 }
 
 .blog-container {
@@ -25,6 +19,9 @@
 
     img {
         width: 100%;
+        outline: solid;
+        outline-width: 1px;
+        outline-color: #eee;
     }
 }
 
@@ -32,6 +29,8 @@
     margin-bottom: 4px;
     font-style: italic;
     color: #555;
+    float: left;
+    line-height: 35px;
 }
 
 .blog-image {
@@ -50,4 +49,12 @@
 
 .blog-title-text {
     font-size: 55px;
+}
+
+.medium-link {
+    float: right;
+}
+
+.medium-icon {
+    font-size: 30px;
 }
