@@ -1,8 +1,16 @@
+- title: TeamsCode
+  description: Co-president of a 501(c)(3) nonprofit promoting CS to high schoolers.
+  image: /assets/images/experience-images/teamscode.png
+  link: https://teamscode.com
+- title: Statsify
+  description: Founded a web application that visualizes interesting stats about websites. 
+  image: /assets/images/experience-images/statsify.png
+  link: https://www.statsify.us
 - title: Expedia Group
-  description: "Interned on the Air Experience Team as a full-stack developer."
+  description: Interned on the Air Experience Team as a full-stack developer.
   image: /assets/images/experience-images/expedia.png
   link: https://docs.google.com/presentation/d/1ljYnmAM7By8gfDnNmaPnVGYLrkUY_q5yclxtgdL2i5g/edit?usp=sharing
 - title: UW CSE
-  description: "Research intern helping with a Ph.D. student's project called Casper."
+  description: Research intern helping with a Ph.D. student's project called Casper.
   image: /assets/images/experience-images/uwashington.png
   link: https://casper.uwplse.org
