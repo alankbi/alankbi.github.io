@@ -4,7 +4,7 @@ title: My experience launching Statsify, my first-ever product
 image: /assets/images/blog-images/2019/launching_statsify.png
 permalink: /blog/2019-03-03/my-experience-launching-statsify/
 date: March 3, 2019
-links: https://www.producthunt.com/posts/statsify|Statsify on Product Hunt^^^https://www.webdesignernews.com/entry/2550208|Statsify on Web Designer News^^^https://github.com/alankbi/statsify-api|Source Code on GitHub
+links: https://www.producthunt.com/posts/statsify|Statsify on Product Hunt^^^https://www.webdesignernews.com/entry/2550208|Statsify on Web Designer News^^^https://github.com/alankbi/statsify-api|Source code on GitHub
 ---
 
 On February 18, I launched [Statsify](https://www.statsify.us) on Product Hunt. After a little while, Statsify was featured on the front page, which gave it a decent spike of traffic over the next few days. This blog post talks about my experience throughout both the development process and launch. 
