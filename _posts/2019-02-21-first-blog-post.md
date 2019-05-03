@@ -4,7 +4,11 @@ title: My first ever blog post
 image: /assets/images/blog-images/2019/hello.jpg
 permalink: /blog/2019-02-22/first-blog-post/
 date: February 21, 2019
-links: /|Home page of my website^^^/about|Learn more about me
+links: 
+  - url: /
+    desc: Home page of my website
+  - url: /about
+    desc: Learn more about me
 ---
 
 Hello!

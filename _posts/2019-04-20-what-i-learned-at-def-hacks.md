@@ -4,7 +4,11 @@ title: What I learned at the Def Hacks Seattle 2019 Hackathon
 image: /assets/images/blog-images/2019/def_hacks_hackathon.png
 permalink: /blog/2019-05-03/what-i-learned-at-def-hacks/
 date: May 3, 2019
-links: http://defhacks.io/|Def Hacks home page^^^https://www.getbidbar.com/|Bidbar's website
+links: 
+  - url: http://defhacks.io/
+    desc: Def Hacks home page
+  - url: https://www.getbidbar.com/
+    desc: Bidbar's website
 ---
 
 On April 13, I attended the Def Hacks Seattle 2019 hackathon, hosted by my friend [Chris Elliott](https://chrismelliott.com/). This was my second hackathon ever, the first being the Def Hacks Seattle hackathon back in 2017, during which Chris and I co-founded [TeamsCode](https://teamscode.com/). This time around, I was going in solo and wanted to make some progress on my upcoming project [Bidbar](https://www.getbidbar.com/). As such, my hackathon experience was a bit atypical; instead of competing and working on a new project, I was coming in with an existing project I wanted to make progress on (I knew I couldn't compete or present my project since I already worked on it beforehand). In addition, I didn't stay the whole time; I came at about 11 am and left at 11 pm, so only half of the experience of the full hackathon. Nonetheless, I still learned a lot of things, which I'm going to share in this blog post. 

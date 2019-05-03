@@ -16,10 +16,8 @@
         {% if page.links %}
             <div class="related-posts">
                 <h3 class="font-weight-bold">Related Links</h3>
-                {% assign links = page.links | split: '^^^' %}
-                {% for link in links %}
-                    {% assign temp = link | split: '|' %}
-                    <a class="font-weight-bold" href="{{ temp | first}}">{{ temp | last }}</a><br>
+                {% for link in page.links %}
+                    <a target="_blank" class="font-weight-bold" href="{{ link.url }}">{{ link.desc }}</a><br>
                 {% endfor %}
             </div>
         {% endif %}
