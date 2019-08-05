@@ -1,3 +1,7 @@
+- title: Statsify
+  description: Web application that visualizes interesting stats and info about websites. 
+  image: /assets/images/project-images/statsify.png
+  link: https://www.statsify.us
 - title: Easy Due Dates
   description: Trello power-up that pushes card due dates back by one day. 
   image: /assets/images/project-images/trello_easy_due_dates.png

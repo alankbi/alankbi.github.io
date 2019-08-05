@@ -1,11 +1,11 @@
+- title: Bidbar
+  description: Founded Mac app that allows users to save and run commands from the menu bar
+  image: /assets/images/experience-images/bidbar.png
+  link: https://www.getbidbar.com
 - title: TeamsCode
   description: Co-president of a 501(c)(3) nonprofit promoting CS to high schoolers.
   image: /assets/images/experience-images/teamscode.png
   link: https://teamscode.com
-- title: Statsify
-  description: Founded a web application that visualizes interesting stats about websites. 
-  image: /assets/images/experience-images/statsify.png
-  link: https://www.statsify.us
 - title: Expedia Group
   description: Interned on the Air Experience Team as a full-stack developer.
   image: /assets/images/experience-images/expedia.png
