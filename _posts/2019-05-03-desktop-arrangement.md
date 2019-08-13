@@ -9,7 +9,7 @@ links:
     desc: TeamsCode internal resources blog post
 ---
 
-About a month ago, I wrote a [blog post](https://teamscode.com/blog/teamscode-internal-resources/) describing the internal resources used by [TeamsCode](https://teamscode.com/), a 501(c)(3) nonprofit organization that organizes biannual programming contests in Washington Oregon. Building off of this, I thought it'd be cool to share some of the tools I use on my own computer, at the very least so that I can look back on it in five years and see how things have changed. So without further ado, let's start with the apps in my dock:
+About a month ago, I wrote a [blog post](https://teamscode.com/blog/teamscode-internal-resources/) describing the internal resources used by [TeamsCode](https://teamscode.com/), a 501(c)(3) nonprofit organization that organizes biannual programming contests in Washington and Oregon. Building off of this, I thought it'd be cool to share some of the tools I use on my own computer, at the very least so that I can look back on it in five years and see how things have changed. So without further ado, let's start with the apps in my dock:
 <br><br><br>
 ![Apps in my dock](/assets/images/blog-images/2019/dock_full.png)
 <br><br>
