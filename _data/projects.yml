@@ -1,3 +1,7 @@
+- title: Bidbar
+  description: Mac app that allows users to save and run commands from the menu bar
+  image: /assets/images/project-images/bidbar.png
+  link: https://www.getbidbar.com
 - title: Statsify
   description: Web application that visualizes interesting stats and info about websites. 
   image: /assets/images/project-images/statsify.png
