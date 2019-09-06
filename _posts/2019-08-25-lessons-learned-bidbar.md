@@ -2,8 +2,8 @@
 layout: blog_layout
 title: Lessons learned with Bidbar
 image: /assets/images/blog-images/2019/bidbar.png
-permalink: /blog/2019-08-25/lessons-learned-with-bidbar/
-date: August 25, 2019
+permalink: /blog/2019-09-13/lessons-learned-with-bidbar/
+date: September 13, 2019
 links: 
 - url: https://www.getbidbar.com
   desc: Bidbar website
@@ -17,7 +17,7 @@ Before I began coding Bidbar in Swift, I made several attempts to gather feedbac
 
 ## Pre-launch marketing
 
-You don't need to wait until you launch to do all your marketing. As I began writing Bidbar in Swift, I created a mailing list and landing page to gather interested users. With some limited marketing on community sites and $10 spent on Facebook ads, I got about 20 sign ups. Lots of startups are able to gather hundreds to thousands of subscribers many months before launch. 
+You don't need to wait until you launch to do all your marketing. As I began writing Bidbar in Swift, I created a mailing list and landing page to gather interested users. With some limited posting on community sites and $10 spent on Facebook ads, I got about 20 signups. Lots of startups are able to gather thousands of subscribers months before launch. 
 
 ## A/B testing
 
@@ -25,7 +25,7 @@ If you're not familiar, A/B testing is when you have multiple variants of a web 
 
 ## Results
 
-On August 1, I launched Bidbar on [Product Hunt](https://www.producthunt.com/posts/bidbar) and other sites. As of today, Bidbar has 208 upvotes on Product Hunt and has been downloaded 174 times. 
+On August 1, I launched Bidbar on [Product Hunt](https://www.producthunt.com/posts/bidbar) and other sites. As of today, Bidbar has 209 upvotes on Product Hunt and has been downloaded 184 times. 
 
 ## Conclusion
 
