@@ -25,7 +25,7 @@ If you're not familiar, A/B testing is when you have multiple variants of a web 
 
 ## Results
 
-On August 1, I launched Bidbar on [Product Hunt](https://www.producthunt.com/posts/bidbar) and other sites. As of today, Bidbar has 209 upvotes on Product Hunt and has been downloaded 184 times. 
+On August 1, I launched Bidbar on [Product Hunt](https://www.producthunt.com/posts/bidbar) and other sites. As of today, Bidbar has 209 upvotes on Product Hunt and has been downloaded 190 times. 
 
 ## Conclusion
 
