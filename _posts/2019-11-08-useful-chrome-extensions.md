@@ -2,8 +2,13 @@
 layout: blog_layout
 title: Useful Chrome extensions
 image: /assets/images/blog-images/2019/chrome_extensions.jpg
-permalink: /blog/2019-11-08/useful-chrome-extensions/
-date: November 8, 2019
+permalink: /blog/2019-11-20/useful-chrome-extensions/
+date: November 20, 2019
+links: 
+  - url: /blog/2019-05-25/my-computer-desktop-arrangement/
+    desc: My computer desktop arrangement
+  - url: https://teamscode.com/blog/teamscode-internal-resources/
+    desc: TeamsCode's internal resources
 ---
 
 In a [previous blog post](/blog/2019-05-25/my-computer-desktop-arrangement/), I showed off some of the apps I found useful on my computer. Today, I'll be writing about the Chrome extensions that help me browse the web more productively. 
@@ -38,4 +43,43 @@ I used to have the same password for all my accounts, but I finally gathered my 
 
 Shameless plug: Statsify is a web app that allows you to visualize various stats and info about a website. Download the extension [here](https://chrome.google.com/webstore/detail/statsify/nmifmhiilofkndfejgeigkkpmkmlgoeb?hl=en-US&gl=US), visit the website at [https://statsify.us](https://statsify.us), and learn more about the development process [here](/blog/2019-03-03/my-experience-launching-statsify/)!
 
+### WhatRuns
 
+![WhatRuns](/assets/images/blog-images/2019/whatruns.png)
+
+[WhatRuns](https://www.whatruns.com/) is an extension that tells you what technologies a website runs on. It's useful if you're just curious about how websites are built, and it might help you get an idea of which technologies are popular. 
+
+### The Great Suspender
+
+![The Great Suspender](/assets/images/blog-images/2019/great_suspender.png)
+
+If you're like me, you have a ton of tabs open in your browser, which unfortunately uses up a lot of battery. Luckily, the [Great Suspender](https://chrome.google.com/webstore/detail/the-great-suspender/klbibkeccnjlkjkiokjodocebajanakg) is an extension that automatically suspends the tabs you haven't used in a while. This saves battery while still maintaining your tabs, so when you actually need to use a tab, you can simply click on it to "unsuspend" and use it as normal. 
+
+### Toby
+
+![Toby](/assets/images/blog-images/2019/toby.png)
+
+[Toby](http://www.gettoby.com/) allows you to save collections of tabs. You can do things like save all your current tabs into a new collection, open all tabs in a collection, and more. It's a useful extension especially if you have several workspaces of tabs for different projects you're working on. 
+
+### Auto Replay for YouTube
+
+![Auto Replay](/assets/images/blog-images/2019/auto_replay.png)
+
+[Auto Replay for YouTube](https://chrome.google.com/webstore/detail/auto-replay-for-youtube/kanbnempkjnhadplbfgdaagijdbdbjeb) is another simple extension. It does exactly as you'd expect; it allows you to play YouTube videos on repeat, as well as customize the start and end times of the video loop. 
+
+### Grammarly
+
+![Grammarly](/assets/images/blog-images/2019/grammarly.png)
+
+[Grammarly](https://www.grammarly.com/) is definitely a must-have extension; any time you're writing an email, completing an online form, or otherwise writing something, Grammarly checks to make sure you're not making any English mistakes. It's free and can save you from making embarrassing typos in important emails or documents. 
+
+### Docs PDF/PowerPoint Viewer 
+
+![Docs PDF/PowerPoint Viewer](/assets/images/blog-images/2019/docs_viewer.png)
+
+Lastly, [Docs PDF/PowerPoint Viewer](https://chrome.google.com/webstore/detail/docs-pdfpowerpoint-viewer/nnbmlagghjjcbdhgmkedmbmedengocbn) is an extension by Google that allows you to open and view various documents in a new tab rather than downloading them. Lots of times, a website will have a download link for a PDF or Word document when all I want is to just briefly look at it. This extension allows me to do just that and keep my Downloads folder clean. 
+
+
+## Conclusion
+
+As of writing this, these are all the extensions I have in Chrome. However, I'm always looking for new and useful extensions, so shoot me an email if you have something you want to share!
