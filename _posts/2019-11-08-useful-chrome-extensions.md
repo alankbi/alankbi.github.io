@@ -41,7 +41,7 @@ I used to have the same password for all my accounts, but I finally gathered my 
 
 ![Statsify](/assets/images/blog-images/2019/statsify_extension.png)
 
-Shameless plug: Statsify is a web app that allows you to visualize various stats and info about a website. Download the extension [here](https://chrome.google.com/webstore/detail/statsify/nmifmhiilofkndfejgeigkkpmkmlgoeb?hl=en-US&gl=US), visit the website at [https://statsify.us](https://statsify.us), and learn more about the development process [here](/blog/2019-03-03/my-experience-launching-statsify/)!
+Shameless plug: Statsify is a web app that allows you to visualize various stats and info about a website. Download the extension [here](https://chrome.google.com/webstore/detail/statsify/nmifmhiilofkndfejgeigkkpmkmlgoeb?hl=en-US&gl=US), visit the website at [https://www.statsify.us](https://www.statsify.us), and learn more about the development process [here](/blog/2019-03-03/my-experience-launching-statsify/)!
 
 ### WhatRuns
 
