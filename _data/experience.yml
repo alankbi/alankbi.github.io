@@ -1,3 +1,11 @@
+- title: HackDuke
+  description: Sponsorship lead for the nation's premier tech + social good hackathon.
+  image: /assets/images/experience-images/hackduke.png
+  link: https://hackduke.org/
+- title: Duke ML
+  description: Organizing large-scale machine learning events for the student body.
+  image: /assets/images/experience-images/dml.png
+  link: https://dukeml.org/
 - title: UW CSE
   description: Research intern using machine learning to improve mutation testing. 
   image: /assets/images/experience-images/uwashington.png
