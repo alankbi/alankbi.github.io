@@ -1,5 +1,9 @@
+- title: Detecto
+  description: Build fully-functioning computer vision models with 5 lines of code. 
+  image: /assets/images/project-images/detecto.png
+  link: https://github.com/alankbi/detecto
 - title: Bidbar
-  description: Mac app that allows users to save and run commands from the menu bar
+  description: Mac app that allows users to save and run commands from the menu bar.
   image: /assets/images/project-images/bidbar.png
   link: https://www.getbidbar.com
 - title: Statsify
