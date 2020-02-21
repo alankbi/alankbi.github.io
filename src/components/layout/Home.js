@@ -1,18 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { HeaderText, NormalText } from '../view/Text';
 
 function Home() {
   return (
     <div className="home-page">
-      <h1>Alan Bi's Home Page</h1>
-      <h4>This is the home page for my website.</h4>
+      <HeaderText>Hi, I'm Alan.</HeaderText>
+      <NormalText>This is the home page for my website.</NormalText>
 
-      <Link to="/blog">
-        Blog
-      </Link>
-      <Link to="/about">
-        About
-      </Link>
     </div>
   );
 }

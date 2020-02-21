@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
-import { HeaderLink } from './Link';
+import { NavbarLink } from './Link';
 
 const Absolute = styled.div`
   position: absolute;
@@ -9,21 +9,24 @@ const Absolute = styled.div`
   right: 0;
   height: 50px;
   padding: 10px;
-  background: red;
   text-align: center;
 `;
 
-const LeftHeader = styled(HeaderLink)`
+const LeftHeader = styled(NavbarLink)`
   float: left;
+  font-size: ${ ({ theme: { fontSizes } }) => fontSizes.navbar };
 `;
 
-const RightHeader = styled(HeaderLink)`
+const RightHeader = styled(NavbarLink)`
   float: right;
+  font-size: ${ ({ theme: { fontSizes } }) => fontSizes.navbar };
 `;
 
-const CenterHeader = styled(HeaderLink)`
+const CenterHeader = styled(NavbarLink)`
   display: inline-block;
   margin: 0 auto;
+  font-weight: 700;
+  font-size: ${ ({ theme: { fontSizes } }) => fontSizes.navbartitle };
 `;
 
 function NavBar() {
@@ -37,7 +40,7 @@ function NavBar() {
           About
         </RightHeader>
         <CenterHeader to="/">
-          Alan Bi
+          ALAN BI
         </CenterHeader>
       </nav>
       <div style={{clear: "both"}}>
