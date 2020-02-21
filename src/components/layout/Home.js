@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export function Home() {
+function Home() {
   return (
     <div className="home-page">
       <h1>Alan Bi's Home Page</h1>

@@ -1,21 +1,49 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import styled from 'styled-components'
+import { HeaderLink } from './Link';
 
-export function NavBar() {
+const Absolute = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  padding: 10px;
+  background: red;
+  text-align: center;
+`;
+
+const LeftHeader = styled(HeaderLink)`
+  float: left;
+`;
+
+const RightHeader = styled(HeaderLink)`
+  float: right;
+`;
+
+const CenterHeader = styled(HeaderLink)`
+  display: inline-block;
+  margin: 0 auto;
+`;
+
+function NavBar() {
   return (
-    <div className="navbar">
+    <Absolute className="navbar">
       <nav>
-        <Link to="/blog">
+        <LeftHeader to="/blog">
           Blog
-        </Link>
-        <Link to="/">
-          Alan Bi
-        </Link>
-        <Link to="/about">
+        </LeftHeader>
+        <RightHeader to="/about">
           About
-        </Link>
+        </RightHeader>
+        <CenterHeader to="/">
+          Alan Bi
+        </CenterHeader>
       </nav>
-    </div>
+      <div style={{clear: "both"}}>
+
+      </div>
+    </Absolute>
   );
 }
 
