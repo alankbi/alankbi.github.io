@@ -2,114 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="469fdfee-5354-42f8-90b4-a869a2f096e1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/alankbi.github.io.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CNAME" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_data/blog_posts.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_data/experience.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_data/projects.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/about.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/blog_item.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/blog_posts.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/experience.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/footer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/head.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/header.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/item.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/projects.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/sidebar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/blog_layout.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/default.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2019-02-21-first-blog-post.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2019-02-27-launching-statsify.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2019-04-20-what-i-learned-at-def-hacks.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2019-05-03-desktop-arrangement.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2019-05-30-high-school-experience.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2019-06-21-resources-to-learn-coding.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2019-08-25-lessons-learned-bidbar.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2019-09-28-takeaways-from-college.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2019-11-08-useful-chrome-extensions.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2019-12-20-campaign-spending-limits.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/_colors.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/_default.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/includes/_footer.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/includes/_header.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/includes/_item.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/includes/_sidebar.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/layouts/_blog_layout.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/about.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/style.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/about/profile.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/blog-images/2019/analyzing_registration.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/blog-images/2019/auto_replay.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/blog-images/2019/bidbar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/blog-images/2019/chrome_extensions.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/blog-images/2019/college.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/blog-images/2019/def_hacks_hackathon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/blog-images/2019/dock_browsers.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/blog-images/2019/dock_dev.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/blog-images/2019/dock_full.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/blog-images/2019/dock_misc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/blog-images/2019/dock_office.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/blog-images/2019/docs_viewer.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/blog-images/2019/empty_desktop.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/blog-images/2019/extension_bar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/blog-images/2019/google_translate.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/blog-images/2019/grammarly.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/blog-images/2019/great_suspender.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/blog-images/2019/hello.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/blog-images/2019/high_school.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/blog-images/2019/internal_resources.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/blog-images/2019/lastpass.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/blog-images/2019/launching_statsify.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/blog-images/2019/learn_coding.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/blog-images/2019/menu_bar_collapsed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/blog-images/2019/menu_bar_expanded.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/blog-images/2019/programming_topics.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/blog-images/2019/spending_limits.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/blog-images/2019/statsify_beginning.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/blog-images/2019/statsify_end.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/blog-images/2019/statsify_extension.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/blog-images/2019/statsify_middle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/blog-images/2019/statsify_traffic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/blog-images/2019/statsify_traffic_sources.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/blog-images/2019/statsify_trello.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/blog-images/2019/statsify_visualizations.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/blog-images/2019/statsify_webdesignernews.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/blog-images/2019/text_blaze.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/blog-images/2019/toby.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/blog-images/2019/ublock.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/blog-images/2019/unmailto.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/blog-images/2019/whatruns.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/blog-images/2020/object_detection.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/experience-images/dml.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/experience-images/expedia.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/experience-images/hackduke.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/experience-images/teamscode.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/experience-images/uwashington.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/project-images/bidbar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/project-images/bubble_game.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/project-images/continents.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/project-images/detecto.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/project-images/gravity_simulation.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/project-images/ml_algorithms.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/project-images/quicknews.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/project-images/statsify.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/project-images/tasklist.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/project-images/trello_easy_due_dates.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/default.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/header.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/sidebar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/experience.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects.html" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/view/NavBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -123,15 +23,23 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/index.css">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+            <state relative-caret-position="30">
+              <caret line="2" column="42" lean-forward="true" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#169#217#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/view/NavBar.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -140,10 +48,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/index.js">
+        <entry file="file://$PROJECT_DIR$/src/components/layout/Home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="59" selection-start-line="10" selection-start-column="59" selection-end-line="10" selection-end-column="59" />
+            <state relative-caret-position="60">
+              <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -151,7 +59,34 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/layout/Blog.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="28" column="20" lean-forward="true" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>navbar</find>
+      <find>na</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -160,6 +95,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/components/layout/NavBar.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/components/view/NavBar.js" />
+        <option value="$PROJECT_DIR$/src/components/layout/Home.js" />
+        <option value="$PROJECT_DIR$/src/components/layout/Blog.js" />
       </list>
     </option>
   </component>
@@ -186,6 +127,26 @@
               <item name="alankbi.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="alankbi.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="alankbi.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="alankbi.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="alankbi.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="layout" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="alankbi.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="alankbi.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -205,6 +166,12 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/view" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -228,12 +195,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582251414039</updated>
-      <workItem from="1582251417112" duration="1301000" />
+      <workItem from="1582251417112" duration="2692000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1301000" />
+    <option name="totallyTimeSpent" value="2692000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="0" />
@@ -247,8 +214,8 @@
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32892805" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32892805" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -262,13 +229,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="18" lean-forward="true" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/robots.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -308,25 +268,53 @@
     <entry file="file://$PROJECT_DIR$/src/index.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="20" lean-forward="true" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="59" selection-start-line="10" selection-start-column="59" selection-end-line="10" selection-end-column="59" />
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="42" lean-forward="true" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#169#217#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/view/NavBar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
+    <entry file="file://$PROJECT_DIR$/src/components/layout/Home.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+        <state relative-caret-position="60">
+          <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/layout/Blog.js">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
