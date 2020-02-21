@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <title>Alan Bi</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" 
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <!--Code for Google Analytics-->
+    <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+          ga('create', 'UA-99742143-1', 'auto');
+          ga('send', 'pageview');
+    </script>
+</head>
+    <body bgcolor="#F7F7F7">
+        <script src="/assets/js/sidebar.js"></script>
+        
+            
+            <div id="sidebar-small">
+        <div class="sidebar-section-links">
+            <a class="sidebar-section-link" href="/">Home</a>
+            <a class="sidebar-section-link" href="/blog/">Blog</a>
+        </div>
+    </div>
+<div class="sidebar-container" id="sidebar">
+    <div class="sidebar">
+        <a href="/"><h1 class="font-weight-bold">Alan Bi</h1></a>
+        <div class="sidebar-section-links font-weight-bold">
+            <a class="sidebar-section-link" href="/projects">Projects</a><br>
+            <a class="sidebar-section-link" href="/experience">Experience</a><br>
+            <a class="sidebar-section-link" href="/blog/">Blog</a><br>
+            <a class="sidebar-section-link" href="/about">About</a><br>
+        </div><br>
+        
+            <div class="related-posts">
+                <h3 class="font-weight-bold">Related Links</h3>
+                
+                    <a target="_blank" class="font-weight-bold" href="https://www.producthunt.com/posts/statsify">Statsify on Product Hunt</a><br>
+                
+                    <a target="_blank" class="font-weight-bold" href="https://www.webdesignernews.com/entry/2550208">Statsify on Web Designer News</a><br>
+                
+                    <a target="_blank" class="font-weight-bold" href="https://github.com/alankbi/statsify-api">Source code on GitHub</a><br>
+                
+            </div>
+        
+    </div>
+</div>
+        
+        <div class="mt-3">
+            <div class="blog-container" id="content">
+                <div class="blog-title">
+                    <h1 class="blog-title-text">My experience launching Statsify, my first-ever product</h1>
+                </div>
+                
+                    <div class="blog-date">
+                        <p class="blog-date-text">Published on March 3, 2019</p>
+                        <a class="medium-link" href="https://medium.com/@alankbi">
+                            <i class="medium-icon fab fa-medium"></i></a>
+                    </div>
+                
+                
+                    <div class="blog-image">
+                        <img src="/assets/images/blog-images/2019/launching_statsify.png" alt="Blog header image">
+                    </div>
+                
+                <div class="blog-content">
+                    <p>On February 18, I launched <a href="https://www.statsify.us">Statsify</a> on Product Hunt. After a little while, Statsify was featured on the front page, which gave it a decent spike of traffic over the next few days. This blog post talks about my experience throughout both the development process and launch.</p>
+
+<p>Before we get into the details, here are some basic numbers for those of you curious:</p>
+
+<ul>
+  <li>Upvotes on <a href="https://www.producthunt.com/posts/statsify">Product Hunt</a>: 143</li>
+  <li>Upvotes on <a href="https://www.webdesignernews.com/entry/2550208">Web Designer News</a>: 475</li>
+  <li>Unique visitors within first week: 3186</li>
+  <li>Chrome extension users within first week: 49</li>
+</ul>
+
+<h1 id="idea-formation">Idea Formation</h1>
+
+<p>As a second semester senior in high school, I knew that I was at risk of contracting <a href="https://en.wikipedia.org/wiki/Senioritis">senioritis</a>. To combat this, I decided to keep myself busy by working on random coding projects.</p>
+
+<p>I felt like learning web scraping, so I decided that I would play around with the Python <a href="http://docs.python-requests.org/en/master/">requests</a> and <a href="https://www.crummy.com/software/BeautifulSoup/">Beautiful Soup</a> libraries and see if I could come up with an idea for a full-fledged project along the way.</p>
+
+<p>Eventually, I came up with Statsify: a web app that visualizes interesting stats and info about a web page/website. I’ve always wanted a tool that could summarize the sites I visit on a daily basis, so this was the perfect chance for me to improve my programming skills while also solving a problem I had!</p>
+
+<p>All in all, this stage didn’t take up much of my time. Most people say that the idea isn’t <em>that</em> important. Plus, if you’re a student just trying to get better at coding, any decent idea will do. Take Statsify: the idea is very simple, yet I still learned a ton while making it. And despite not solving some grand issue, it still did pretty well on Product Hunt.</p>
+
+<h1 id="development">Development</h1>
+
+<p>Before I started developing the product, I did a lot of research on best design practices, testing frameworks, etc. This hindered my progress at first, but in the end, I think it helped me maintain my pace as the project grew larger and more complex. If you’re starting a new project, I’d recommending doing a small amount of research before diving in: too little and your codebase might be a mess later on, while too much and you end up over-thinking instead of just doing.</p>
+
+<p>I began by coding the backend web scraping functionality. Along the way, I came up with a lot of new ideas, so it was helpful to create a <a href="https://en.wikipedia.org/wiki/Kanban_board">Kanban board</a> in Trello to organize these in Backlog, Pending, In Progress, and Done lists. I found that having lists also helped me prioritize which features to include in my MVP and which I’d have to come back to.</p>
+
+<p><img src="/assets/images/blog-images/2019/statsify_trello.png" alt="My Trello board" />
+<br /><br /></p>
+
+<p>Along with the Trello board, unit tests saved me a ton of time. This was my first project with real unit tests, and I’ve lost count of the number of times I changed a few lines of code and broke several unit tests, alerting me of a mistake. If I had to choose one thing I learned the most from the development process, it would be to write unit tests whenever possible, even for small side projects.</p>
+
+<p>Finally, after I felt good about the backend, I built a simple REST API with Flask and hosted the app on a free Heroku dyno (see <a href="https://www.statsify.us/api">here</a> for documentation). This ended up being more than enough to support the app, with the only downside being that free dynos automatically sleep after 30 minutes of inactivity (I was able to work around this using <a href="https://coderwall.com/p/u0x3nw/avoid-heroku-idling-with-new-relic-pings">New Relic pings</a>).</p>
+
+<p>Now on to the frontend! Since my original goal was to learn more about web scraping, I put a lot less effort into the code for <a href="https://www.statsify.us">https://www.statsify.us</a>. My goal was simply to create a beautiful home page that could hold its own on Product Hunt. Below is the progression of the website:</p>
+
+<p><img src="/assets/images/blog-images/2019/statsify_beginning.png" alt="Screenshot of website at beginning" />
+<em>So far, I’ve just laid out all the elements using default Bootstrap styles.</em>
+<br /><br /></p>
+
+<p><img src="/assets/images/blog-images/2019/statsify_middle.png" alt="Screenshot of website halfway through" />
+<em>Added some shadows, sharpened corners, and messed with font styling. Looks a lot better!</em>
+<br /><br /></p>
+
+<p><img src="/assets/images/blog-images/2019/statsify_end.png" alt="Screenshot of website at the end" />
+<em>Finishing touches, including a background image and better header/footer buttons.</em>
+<br /><br /></p>
+
+<p>I used <a href="https://www.chartjs.org/">Chart.js</a> for the visualizations:</p>
+
+<p><img src="/assets/images/blog-images/2019/statsify_visualizations.png" alt="Screenshot of website visualizations" />
+<br /><br /></p>
+
+<p>And lastly, the Chrome extension, which would allow users to visualize the pages they’re currently browsing. The extension is really just loading an iframe of statsify.us with a query string for the url to visualize, so it was very low effort. Some parts of the website (search bar, JSON response, and a few other buttons) I felt weren’t worth showing in the Chrome extension, but there was an easy workaround to accomplish that: I simply included the query string extensionMode=true in the iframe src url, and the website JavaScript code could then check for this and change the UI accordingly (click <a href="https://www.statsify.us?extensionMode=true&amp;url=alanbi.com">here</a> to see what it looks like).</p>
+
+<h1 id="launch">Launch</h1>
+
+<p>At this point, Statsify was ready to launch. After reading Product Hunt’s <a href="https://blog.producthunt.com/how-to-launch-on-product-hunt-7c1843e06399">guidelines</a> and preparing all my press materials, I submitted Statsify a few minutes after midnight on Monday, February 18. The result is as follows:</p>
+
+<p><img src="/assets/images/blog-images/2019/statsify_traffic.png" alt="Statsify traffic following the launch" />
+<br /><br /></p>
+
+<p>In the first two days, the website got 2165 unique visitors. Surprisingly, Product Hunt was not the only source of traffic; Statsify got posted by other people (or maybe bots?) on sites like <a href="https://www.webdesignernews.com/entry/2550208">Web Designer News</a> (this is probably where that mysterious spike in traffic came from). In fact, Statsify did <em>really</em> well on Web Designer News, becoming the top voted submission in the past 90 days:</p>
+
+<p><img src="/assets/images/blog-images/2019/statsify_webdesignernews.png" alt="Statsify on Web Designer News" />
+<br /><br /></p>
+
+<p>I ended up getting almost as much traffic from Web Designer News as Product Hunt.</p>
+
+<p><img src="/assets/images/blog-images/2019/statsify_traffic_sources.png" alt="Statsify traffic sources (Product Hunt and Web Designer News)" />
+<br /><br /></p>
+
+<p>Overall, I’m very lucky that Statsify was featured on these two sites. A few days later, I posted Statsify on sites like Hacker News and Indie Hackers, although none did nearly as well.</p>
+
+<h1 id="main-takeaway">Main Takeaway</h1>
+
+<p>I’m probably not the most qualified person to give advice about launching a product; I’m still working it out myself. However, the one suggestion that I feel confident making is to keep your initial product simple. At first, I thought Statsify didn’t have enough features, but then I realized it’s better to wait and gather feedback from users rather than painstakingly developing something that nobody ends up using. If you’re a student like me, you have to balance programming with school and other responsibilities, so it’s important to manage your time well.</p>
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p>Statsify was an amazing learning experience. In the beginning, I never even planned to publicize it. But after deciding to do so, it forced me to hold the project to a higher standard than my other projects, knowing that others could end up using it. I think I learned a lot more this way.</p>
+
+<p>If you’re working on a side project, it’s worth considering posting it on sites like Product Hunt. The worst case scenario is that no one likes it or uses it, in which case you can go back to developing it as a side project or move on to something else. However, I’d imagine it’s more likely that you’ll get good feedback and insights that you wouldn’t have otherwise. 
+<br /><br /></p>
+
+<p><em>P.S. If you’re interested in seeing the source code for Statsify, I recently made it public on GitHub, which you can check out <a href="https://github.com/alankbi/statsify-api">here</a>.</em></p>
+
+                </div>
+            </div>
+            <div class="footer">
+    <div class="contact-buttons"> 
+        <a href="mailto:alan.bi326@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+        <a href="https://twitter.com/alankbi" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://github.com/alankbi" target="_blank"><i class="fab fa-github"></i></a>
+        <!--<a href="https://www.linkedin.com/in/alanbi/" target="_blank"><i class="fab fa-linkedin"></i></a>-->
+    </div>
+</div>
+        </div>
+    </body>
+</html>
