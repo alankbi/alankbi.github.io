@@ -8,3 +8,7 @@ export const NavbarLink = styled(Link)`
   font-weight: light;
   text-decoration: none;
 `;
+
+export const ProjectLink = styled.a`
+  text-decoration: none;
+`;

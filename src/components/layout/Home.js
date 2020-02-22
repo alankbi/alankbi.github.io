@@ -1,13 +1,22 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Projects from '../../data/Projects';
+import Item from '../view/Item';
 import { HeaderText, NormalText } from '../view/Text';
+import { CenteredContainer } from '../view/Container';
+
 
 function Home() {
   return (
     <div className="home-page">
-      <HeaderText>Hi, I'm Alan.</HeaderText>
-      <NormalText>This is the home page for my website.</NormalText>
 
+      <div style={{marginBottom: "100px"}}>
+        <HeaderText>Hi, I'm Alan.</HeaderText>
+        <NormalText style={{textAlign: "center"}}>This is the home page for my website.</NormalText>
+      </div>
+
+      <CenteredContainer>
+        {Projects.map((project) => <Item project={project} />)}
+      </CenteredContainer>
     </div>
   );
 }
