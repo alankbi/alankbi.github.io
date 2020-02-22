@@ -8,15 +8,13 @@ import NavBar from './components/view/NavBar';
 import Home from './components/layout/Home';
 import Blog from './components/layout/Blog';
 import About from './components/layout/About';
-import Theme from './Theme'
+import Theme, { ThemeConfig } from './Theme'
 import styled from 'styled-components';
 
 
 const Container = styled.div`
   font-family: ${ ({ theme }) => theme.font };
-  background: ${ ({ theme }) => theme.background };
 `;
-
 
 const Content = styled.div`
   margin: 160px auto;
@@ -24,7 +22,8 @@ const Content = styled.div`
   justify-content: center;
 `;
 
-function App() {
+function App(props) {
+  document.body.style.backgroundColor = ThemeConfig.colors.background;
   return (
     // <Provider store={store}>
     <Theme>

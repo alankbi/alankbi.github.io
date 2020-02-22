@@ -6,7 +6,7 @@ export default [
     description: 'Build fully-functioning computer vision models with 5 lines of code.',
     image: '/images/projects/detecto.svg',
     link: 'https://github.com/alankbi/detecto',
-    color: ThemeConfig.colors.red,
+    color: ThemeConfig.colors.blue,
   },
   {
     title: 'Bidbar',

@@ -30,14 +30,14 @@ export const ItemContainer = styled.div`
   width: 400px;
   height: 400px;
   text-align: center;
-  box-shadow: 0 2px 8px rgba(32,43,54,0.12);
+  box-shadow: 0 2px 8px rgba(32,43,54,0.08);
   background-image: url(${ ({ image }) => image });
   background-position: center;
   background-size: 100%;
   background-color: ${ ({ color }) => color };
   padding: 10px;
-  margin: 20px;
-  border-radius: 2px;
+  margin: 10px;
+  border-radius: 0px;
   display: inline-block;
   position: relative;
   

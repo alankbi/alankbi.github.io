@@ -7,6 +7,8 @@ export const HeaderText = styled.h1`
   font-weight: bold;
   text-align: center;
   font-size: ${ ({ theme: { fontSizes } }) => fontSizes.header };
+  text-decoration: underline;
+  text-decoration-color: ${ ({ color, theme: { colors } }) => color ? color : colors.text };
 `;
 
 export const NormalText = styled.p`

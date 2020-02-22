@@ -4,9 +4,11 @@ import { ThemeProvider } from 'styled-components';
 export const ThemeConfig = {
   colors: {
     text: '#444',
-    green: '#6AC868',
-    red: '#E35454',
-    background: '#f8f8f8',
+    green: '#39B54A',
+    yellow: '#FCAD21',
+    red: '#D74724',
+    blue: '#3E93CD',
+    background: '#FAFAFA',
   },
   font: 'Lato',
   fontSizes: {
