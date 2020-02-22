@@ -5,27 +5,6 @@ export const CenteredContainer = styled.div`
   text-align: center;
 `;
 
-export const ItemContainer = styled.div`
-  width: 400px;
-  height: 400px;
-  text-align: center;
-  box-shadow: 0 2px 8px rgba(32,43,54,0.12);
-  background-image: url(${ ({ image }) => image });
-  background-position: center;
-  background-size: 100%;
-  background-color: ${ ({ color }) => color };
-  padding: 10px;
-  margin: 20px;
-  border-radius: 2px;
-  display: inline-block;
-  position: relative;
-  
-  &:hover {
-    // filter: brightness(50%);
-    opacity: 0.5;
-  }
-`;
-
 export const ItemBottomTitle = styled.div`
   position: absolute;
   bottom: 30px;
@@ -44,4 +23,50 @@ export const ItemDescription = styled.div`
   margin: auto;
   height: 100px;
   text-align: center;
+  display: none;
+`;
+
+export const ItemContainer = styled.div`
+  width: 400px;
+  height: 400px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(32,43,54,0.12);
+  background-image: url(${ ({ image }) => image });
+  background-position: center;
+  background-size: 100%;
+  background-color: ${ ({ color }) => color };
+  padding: 10px;
+  margin: 20px;
+  border-radius: 2px;
+  display: inline-block;
+  position: relative;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    top: 0; 
+    left: 0;
+    background: black;
+    opacity: 0;
+    z-index: 1;
+  }
+
+  &:hover::after {
+    content: "";
+    opacity: 0.4;
+    z-index: 1;
+    
+    transition: 0.3s all;
+  }
+  
+  &:hover ${ItemDescription} {
+    display: inline;
+    z-index: 2;
+  }
+  
+  &:hover ${ItemBottomTitle} {
+    z-index: 2;
+  }
 `;

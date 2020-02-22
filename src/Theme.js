@@ -4,7 +4,8 @@ import { ThemeProvider } from 'styled-components';
 export const ThemeConfig = {
   colors: {
     text: '#444',
-    green: '#33cc66',
+    green: '#6AC868',
+    red: '#E35454',
     background: '#f8f8f8',
   },
   font: 'Lato',

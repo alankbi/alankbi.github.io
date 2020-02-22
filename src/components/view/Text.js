@@ -18,7 +18,7 @@ export const ItemTitleText = styled.p`
   color: white;
   text-align: center;
   font-size: ${ ({ theme: { fontSizes } }) => fontSizes.itemtitle };
-  font-weight: bold;  
+  font-weight: bold;
 `;
 
 export const ItemDescriptionText = styled.p`
