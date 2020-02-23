@@ -17,14 +17,14 @@ export const NormalText = styled.p`
 `;
 
 export const ItemTitleText = styled.p`
-  color: white;
+  color: ${ ({ theme: { colors } }) => colors.text };
   text-align: center;
   font-size: ${ ({ theme: { fontSizes } }) => fontSizes.itemtitle };
   font-weight: bold;
 `;
 
 export const ItemDescriptionText = styled.p`
-  color: white;
+  color: ${ ({ theme: { colors } }) => colors.white };
   text-align: center;
   font-size: ${ ({ theme: { fontSizes } }) => fontSizes.itemdesc };
 `;

@@ -13,6 +13,6 @@ export default [
     description: 'Mac app that allows users to save and run commands from the menu bar.',
     image: '/images/projects/bidbar.png',
     link: 'https://www.getbidbar.com',
-    color: ThemeConfig.colors.green,
+    color: ThemeConfig.colors.blue,
   },
 ];

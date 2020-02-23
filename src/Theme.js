@@ -8,7 +8,11 @@ export const ThemeConfig = {
     yellow: '#FCAD21',
     red: '#D74724',
     blue: '#3E93CD',
-    background: '#FAFAFA',
+    white: 'white',
+    background: '#FCFCFC',
+  },
+  gradients: {
+    itemshadow: '0 1px 30px rgba(0, 0, 0, 0.12)',
   },
   font: 'Lato',
   fontSizes: {
@@ -16,7 +20,7 @@ export const ThemeConfig = {
     normal: '18px',
     title: '26px',
     header: '50px',
-    itemtitle: '45px',
+    itemtitle: '40px',
     itemdesc: '22px',
     navbar: '15px',
     navbartitle: '20px',

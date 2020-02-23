@@ -11,7 +11,7 @@ function Home(props) {
     <div className="home-page">
 
       <div style={{marginBottom: "100px"}}>
-        <HeaderText color={props.theme.colors.green}>Hi, I'm Alan.</HeaderText>
+        <HeaderText color={props.theme.colors.blue}>Hi, I'm Alan.</HeaderText>
         <NormalText style={{textAlign: "center"}}>This is the home page for my website.</NormalText>
       </div>
 

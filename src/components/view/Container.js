@@ -7,7 +7,7 @@ export const CenteredContainer = styled.div`
 
 export const ItemBottomTitle = styled.div`
   position: absolute;
-  bottom: 30px;
+  bottom: 25px;
   left: 0;
   right: 0;
   text-align: center;
@@ -27,17 +27,17 @@ export const ItemDescription = styled.div`
 `;
 
 export const ItemContainer = styled.div`
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   text-align: center;
-  box-shadow: 0 2px 8px rgba(32,43,54,0.08);
+  box-shadow: ${ ({ theme: { gradients } }) => gradients.itemshadow } };
   background-image: url(${ ({ image }) => image });
   background-position: center;
   background-size: 100%;
-  background-color: ${ ({ color }) => color };
+  background-color: ${ ({ theme: { colors } }) => colors.white };
   padding: 10px;
-  margin: 10px;
-  border-radius: 0px;
+  margin: 15px;
+  border-radius: 20px;
   display: inline-block;
   position: relative;
   
@@ -48,14 +48,17 @@ export const ItemContainer = styled.div`
     height: 100%;
     top: 0; 
     left: 0;
-    background: black;
+    background: ${ ({ color }) => color };
+    border-radius: 20px;
     opacity: 0;
     z-index: 1;
+    
+    transition: 0.3s all;
   }
 
   &:hover::after {
     content: "";
-    opacity: 0.4;
+    opacity: 0.9;
     z-index: 1;
     
     transition: 0.3s all;
@@ -67,6 +70,6 @@ export const ItemContainer = styled.div`
   }
   
   &:hover ${ItemBottomTitle} {
-    z-index: 2;
+    z-index: 0;
   }
 `;
