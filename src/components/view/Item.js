@@ -9,7 +9,7 @@ function Item(props) {
   const project = Projects[props.project];
   return (
     <ProjectLink to={"/project/" + props.project}>
-      <ItemContainer image={project.image} color={project.color}>
+      <ItemContainer image={project.image}>
         <ItemDescription>
           <ItemDescriptionText>{project.description}</ItemDescriptionText>
         </ItemDescription>

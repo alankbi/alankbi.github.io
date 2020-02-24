@@ -4,25 +4,28 @@ import { ThemeProvider } from 'styled-components';
 export const ThemeConfig = {
   colors: {
     text: '#444',
+    blue: '#3E93CD',
     green: '#39B54A',
     yellow: '#FCAD21',
     red: '#D74724',
-    blue: '#3E93CD',
     white: 'white',
+    gray: 'gray',
     background: '#FCFCFC',
+    current: '#3E93CD',
   },
   gradients: {
     itemshadow: '0 1px 30px rgba(0, 0, 0, 0.12)',
+    colorshadow: '0 0px 8px rgba(0, 0, 0, 0.16)',
   },
   font: 'Lato',
   fontSizes: {
-    small: '14px',
+    small: '15px',
     normal: '18px',
     title: '26px',
     header: '50px',
     itemtitle: '40px',
     itemdesc: '22px',
-    navbar: '15px',
+    navbar: '16px',
     navbartitle: '20px',
   },
 };

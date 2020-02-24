@@ -8,12 +8,17 @@ export const HeaderText = styled.h1`
   text-align: center;
   font-size: ${ ({ theme: { fontSizes } }) => fontSizes.header };
   text-decoration: underline;
-  text-decoration-color: ${ ({ color, theme: { colors } }) => color ? color : colors.text };
+  text-decoration-color: ${ ({ theme: { colors } }) => colors.current };
 `;
 
 export const NormalText = styled.p`
   color: ${ ({ theme: { colors } }) => colors.text };
   font-size: ${ ({ theme: { fontSizes } }) => fontSizes.normal };
+`;
+
+export const GrayText = styled.p`
+  color: ${ ({ theme: { colors } }) => colors.gray };
+  font-size: ${ ({ theme: { fontSizes } }) => fontSizes.small };
 `;
 
 export const ItemTitleText = styled.p`

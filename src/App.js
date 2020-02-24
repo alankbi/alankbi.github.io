@@ -1,10 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-// import { Provider } from 'react-redux';
-
-// import store from './store';
-
 import NavBar from './components/view/NavBar';
+import Footer from './components/view/Footer';
 import Home from './components/layout/Home';
 import Blog from './components/layout/Blog';
 import About from './components/layout/About';
@@ -24,28 +21,48 @@ const Content = styled.div`
   justify-content: center;
 `;
 
-function App(props) {
-  document.body.style.backgroundColor = ThemeConfig.colors.background;
-  return (
-    // <Provider store={store}>
-    <Theme>
-      <BrowserRouter>
-        <Container className="app">
-          <NavBar />
-          <Content>
-            <Switch>
-              <Route exact path="/" component={Home} />
-              <Route exact path="/blog" component={Blog} />
-              <Route exact path="/about" component={About} />
-              <Route path="/project/:project" component={ProjectPage} />
-              <Route component={NotFound} />
-            </Switch>
-          </Content>
-        </Container>
-      </BrowserRouter>
-    </Theme>
-    // </Provider>
-  );
+class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      colors: ['blue', 'green', 'red', 'yellow'],
+      colorIndex: 0,
+    };
+
+    document.body.style.backgroundColor = ThemeConfig.colors.background;
+
+    this.changeColor = this.changeColor.bind(this);
+  }
+
+  changeColor() {
+    let { colors, colorIndex } = this.state;
+    colorIndex = (colorIndex + 1) % colors.length;
+    ThemeConfig.colors.current = ThemeConfig.colors[colors[colorIndex]];
+    this.setState({ colorIndex });
+  }
+
+  render() {
+    return (
+      <Theme>
+        <BrowserRouter>
+          <Container className="app">
+            <NavBar/>
+            <Content style={{marginBottom: "120px"}}>
+              <Switch>
+                <Route exact path="/" component={Home}/>
+                <Route exact path="/blog" component={Blog}/>
+                <Route exact path="/about" component={About}/>
+                <Route path="/project/:project" component={ProjectPage}/>
+                <Route component={NotFound}/>
+              </Switch>
+            </Content>
+            <Footer colorChange={this.changeColor} />
+          </Container>
+        </BrowserRouter>
+      </Theme>
+    );
+  }
 }
 
 export default App;

@@ -16,3 +16,8 @@ export const ProjectLink = styled(Link)`
 export const UnderlinedLink = styled.a`
   color: ${ ({ theme: { colors } }) => colors.text };
 `;
+
+export const UnstyledLink = styled.a`
+  text-decoration: none;
+  color: ${ ({ color, theme: { colors } }) => color ? color : colors.text };
+`;

@@ -48,7 +48,7 @@ export const ItemContainer = styled.div`
     height: 100%;
     top: 0; 
     left: 0;
-    background: ${ ({ color }) => color };
+    background: ${ ({ theme: { colors } }) => colors.current };
     border-radius: 20px;
     opacity: 0;
     z-index: 1;

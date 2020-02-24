@@ -20,7 +20,7 @@ function ProjectPage(props) {
     <div className="project-page">
       <div>
         <UnderlinedLink href={project.link}>
-          <HeaderText color={props.theme.colors.blue}>{project.title}</HeaderText>
+          <HeaderText color={props.theme.colors.current}>{project.title}</HeaderText>
         </UnderlinedLink>
         <NormalText style={{textAlign: "center"}}>{project.description}</NormalText>
       </div>

@@ -10,10 +10,10 @@ function Home(props) {
   return (
     <div className="home-page">
 
-      <div style={{marginBottom: "100px"}}>
-        <HeaderText color={props.theme.colors.blue}>Hi, I'm Alan.</HeaderText>
-        <NormalText style={{textAlign: "center"}}>This is the home page for my website.</NormalText>
-      </div>
+      <CenteredContainer style={{marginBottom: "100px"}}>
+        <HeaderText color={props.theme.colors.current}>Hi, I'm Alan.</HeaderText>
+        <NormalText>This is the home page for my website.</NormalText>
+      </CenteredContainer>
 
       <CenteredContainer>
         {Object.keys(Projects).map((project) => <Item project={project} />)}
