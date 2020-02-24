@@ -8,6 +8,8 @@ import NavBar from './components/view/NavBar';
 import Home from './components/layout/Home';
 import Blog from './components/layout/Blog';
 import About from './components/layout/About';
+import ProjectPage from './components/layout/ProjectPage';
+import NotFound from './components/layout/NotFound';
 import Theme, { ThemeConfig } from './Theme'
 import styled from 'styled-components';
 
@@ -35,6 +37,8 @@ function App(props) {
               <Route exact path="/" component={Home} />
               <Route exact path="/blog" component={Blog} />
               <Route exact path="/about" component={About} />
+              <Route path="/project/:project" component={ProjectPage} />
+              <Route component={NotFound} />
             </Switch>
           </Content>
         </Container>

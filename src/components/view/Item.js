@@ -1,13 +1,14 @@
 import React from 'react';
 import { ProjectLink } from './Link';
+import Projects from '../../data/Projects'
 import { ItemTitleText, ItemDescriptionText } from '../view/Text';
 import { ItemContainer, ItemBottomTitle, ItemDescription } from '../view/Container'
 
 
 function Item(props) {
-  const project = props.project;
+  const project = Projects[props.project];
   return (
-    <ProjectLink href={project.link}>
+    <ProjectLink to={"/project/" + props.project}>
       <ItemContainer image={project.image} color={project.color}>
         <ItemDescription>
           <ItemDescriptionText>{project.description}</ItemDescriptionText>

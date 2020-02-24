@@ -9,6 +9,10 @@ export const NavbarLink = styled(Link)`
   text-decoration: none;
 `;
 
-export const ProjectLink = styled.a`
+export const ProjectLink = styled(Link)`
   text-decoration: none;
+`;
+
+export const UnderlinedLink = styled.a`
+  color: ${ ({ theme: { colors } }) => colors.text };
 `;
