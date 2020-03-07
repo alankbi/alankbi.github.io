@@ -5,6 +5,10 @@ export const CenteredContainer = styled.div`
   text-align: center;
 `;
 
+export const LeftAlignedContainer = styled.div`
+  text-align: left;
+`;
+
 export const ItemBottomTitle = styled.div`
   position: absolute;
   bottom: 25px;
@@ -32,8 +36,9 @@ export const ItemContainer = styled.div`
   text-align: center;
   box-shadow: ${ ({ theme: { gradients } }) => gradients.itemshadow } };
   background-image: url(${ ({ image }) => image });
-  background-position: center;
-  background-size: 100%;
+  background-position: 50% 25%;
+  background-size: 50%;
+  background-repeat: no-repeat;
   background-color: ${ ({ theme: { colors } }) => colors.white };
   padding: 10px;
   margin: 15px;

@@ -1,11 +1,14 @@
 import React from 'react';
-import { HeaderText, NormalText } from '../view/Text';
+import {HeaderText, NormalText, ProjectInfoTitleText} from '../view/Text';
 import { UnderlinedLink } from '../view/Link';
-import { CenteredContainer } from '../view/Container';
+import {CenteredContainer, LeftAlignedContainer} from '../view/Container';
+import { Row, Column } from '../view/Grid';
+import { ProjectImage } from '../view/Image';
 import Projects from '../../data/Projects';
 import NotFound from './NotFound'
 import { withTheme} from 'styled-components';
 import { useParams } from 'react-router-dom';
+import Tag from '../view/Tag';
 
 function ProjectPage(props) {
   const params = useParams();
@@ -18,16 +21,26 @@ function ProjectPage(props) {
 
   return (
     <div className="project-page">
-      <div>
+      <CenteredContainer>
         <UnderlinedLink href={project.link}>
           <HeaderText color={props.theme.colors.current}>{project.title}</HeaderText>
         </UnderlinedLink>
-        <NormalText style={{textAlign: "center"}}>{project.description}</NormalText>
-      </div>
+      </CenteredContainer>
       <CenteredContainer>
-        <UnderlinedLink href={project.link}>
-          <NormalText>Click here to learn more.</NormalText>
-          </UnderlinedLink>
+        <Row style={{marginTop: '20px'}}>
+          <Column>
+            <ProjectImage src={project.image} alt={project.title} />
+          </Column>
+          <Column style={{padding: '0px 40px'}}>
+            <LeftAlignedContainer className="project-info">
+              <ProjectInfoTitleText>Description</ProjectInfoTitleText>
+              <NormalText>{project.longdescription}</NormalText>
+
+              <ProjectInfoTitleText>Tags</ProjectInfoTitleText>
+              {project.tags.map((tag) => <Tag tag={tag}/>)}
+            </LeftAlignedContainer>
+          </Column>
+        </Row>
       </CenteredContainer>
     </div>
   );

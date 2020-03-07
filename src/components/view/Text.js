@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 
 export const HeaderText = styled.h1`
+  display: inline-block;
   color: ${ ({ theme: { colors } }) => colors.text };
   font-weight: bold;
   text-align: center;
@@ -14,6 +15,7 @@ export const HeaderText = styled.h1`
 export const NormalText = styled.p`
   color: ${ ({ theme: { colors } }) => colors.text };
   font-size: ${ ({ theme: { fontSizes } }) => fontSizes.normal };
+  line-height: 1.5;
 `;
 
 export const GrayText = styled.p`
@@ -32,4 +34,10 @@ export const ItemDescriptionText = styled.p`
   color: ${ ({ theme: { colors } }) => colors.white };
   text-align: center;
   font-size: ${ ({ theme: { fontSizes } }) => fontSizes.itemdesc };
+`;
+
+export const ProjectInfoTitleText = styled.h2`
+  color: ${ ({ theme: { colors } }) => colors.text };
+  font-size: ${ ({ theme: { fontSizes } }) => fontSizes.title };
+  font-weight: bold;
 `;
