@@ -9,6 +9,7 @@ export const StyledTag = styled.div`
   border-radius: 20px;
   background: ${ ({ theme: { colors } }) => colors.current };
   color: ${ ({ theme: { colors } }) => colors.white };
+  // box-shadow: ${ ({ theme: { gradients } }) => gradients.colorshadow };
   
   & p {
     margin: 0;

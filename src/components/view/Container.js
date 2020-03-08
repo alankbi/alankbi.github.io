@@ -42,7 +42,7 @@ export const ItemContainer = styled.div`
   background-color: ${ ({ theme: { colors } }) => colors.white };
   padding: 10px;
   margin: 15px;
-  border-radius: 20px;
+  border-radius: 0px;
   display: inline-block;
   position: relative;
   
@@ -54,7 +54,7 @@ export const ItemContainer = styled.div`
     top: 0; 
     left: 0;
     background: ${ ({ theme: { colors } }) => colors.current };
-    border-radius: 20px;
+    border-radius: 0px;
     opacity: 0;
     z-index: 1;
     

@@ -9,6 +9,8 @@ import NotFound from './NotFound'
 import { withTheme} from 'styled-components';
 import { useParams } from 'react-router-dom';
 import Tag from '../view/Tag';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLink } from '@fortawesome/free-solid-svg-icons'
 
 function ProjectPage(props) {
   const params = useParams();
@@ -22,8 +24,9 @@ function ProjectPage(props) {
   return (
     <div className="project-page">
       <CenteredContainer>
-        <UnderlinedLink href={project.link}>
+        <UnderlinedLink href={project.link} target={'_blank'}>
           <HeaderText color={props.theme.colors.current}>{project.title}</HeaderText>
+          <FontAwesomeIcon icon={ faLink } style={{verticalAlign: 'super', marginLeft: '10px'}}/>
         </UnderlinedLink>
       </CenteredContainer>
       <CenteredContainer>
