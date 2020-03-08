@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components'
 import { NavbarLink } from './Link';
+import { withRouter } from 'react-router-dom';
+
 
 const Absolute = styled.div`
   position: absolute;
@@ -14,11 +16,13 @@ const Absolute = styled.div`
 
 const LeftHeader = styled(NavbarLink)`
   float: left;
+  margin-left: 50px;
   font-size: ${ ({ theme: { fontSizes } }) => fontSizes.navbar };
 `;
 
 const RightHeader = styled(NavbarLink)`
   float: right;
+  margin-right: 50px;
   font-size: ${ ({ theme: { fontSizes } }) => fontSizes.navbar };
 `;
 
@@ -29,17 +33,19 @@ const CenterHeader = styled(NavbarLink)`
   font-size: ${ ({ theme: { fontSizes } }) => fontSizes.navbartitle };
 `;
 
-function NavBar() {
+const NavBar = withRouter(function (props) {
+  const url = props.location.pathname;
+
   return (
     <Absolute className="navbar">
       <nav>
-        <LeftHeader to="/blog">
+        <LeftHeader to="/blog" active={url.startsWith("/blog")}>
           Blog
         </LeftHeader>
-        <RightHeader to="/about">
+        <RightHeader to="/about" active={url.startsWith("/about")}>
           About
         </RightHeader>
-        <CenterHeader to="/">
+        <CenterHeader to="/" active={url === "/"}>
           ALAN BI
         </CenterHeader>
       </nav>
@@ -48,6 +54,6 @@ function NavBar() {
       </div>
     </Absolute>
   );
-}
+});
 
 export default NavBar;
