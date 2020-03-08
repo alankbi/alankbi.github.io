@@ -14,7 +14,25 @@ export const ProjectLink = styled(Link)`
 `;
 
 export const UnderlinedLink = styled.a`
+  position: relative;
   color: ${ ({ theme: { colors } }) => colors.text };
+  
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0%;
+    bottom: -8px;
+    height: 0px;
+    width: 100%;
+    border-bottom: 5px solid ${ ({ theme: { colors } }) => colors.current };
+    transition: 0.3s all;
+  }
+  
+  &:hover:after {
+    left: 50%;
+    width: 0%;
+    transition: 0.3s all;
+  }
 `;
 
 export const UnstyledLink = styled.a`

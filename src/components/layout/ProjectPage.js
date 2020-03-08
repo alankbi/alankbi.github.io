@@ -26,8 +26,8 @@ function ProjectPage(props) {
       <CenteredContainer>
         <UnderlinedLink href={project.link} target={'_blank'}>
           <HeaderText color={props.theme.colors.current}>{project.title}</HeaderText>
-          <FontAwesomeIcon icon={ faLink } style={{verticalAlign: 'super', marginLeft: '10px'}}/>
         </UnderlinedLink>
+        <FontAwesomeIcon icon={ faLink } style={{verticalAlign: 'super', marginLeft: '10px'}}/>
       </CenteredContainer>
       <CenteredContainer>
         <Row style={{marginTop: '20px'}}>

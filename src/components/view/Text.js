@@ -8,8 +8,6 @@ export const HeaderText = styled.h1`
   font-weight: bold;
   text-align: center;
   font-size: ${ ({ theme: { fontSizes } }) => fontSizes.header };
-  text-decoration: underline;
-  text-decoration-color: ${ ({ theme: { colors } }) => colors.current };
 `;
 
 export const NormalText = styled.p`
