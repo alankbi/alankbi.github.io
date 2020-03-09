@@ -3,17 +3,19 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom';
 
 
-export const HoverEffect = styled(Link)`
+export const UnderlinedLink = styled(Link)`
   position: relative;
+  text-decoration: none;
+  color: ${ ({ theme: { colors } }) => colors.text };
   
   &:after {
     content: "";
     position: absolute;
     left: 0%;
-    bottom: -8px;
+    bottom: -3px;
     height: 0px;
     width: 100%;
-    border-bottom: 5px solid ${ ({ theme: { colors } }) => colors.current };
+    border-bottom: 3px solid ${ ({ theme: { colors } }) => colors.current };
     transition: 0.3s all;
   }
   
@@ -25,7 +27,7 @@ export const HoverEffect = styled(Link)`
 `;
 
 
-export const NavbarLink = styled(HoverEffect)`
+export const NavbarLink = styled(UnderlinedLink)`
   color: ${ ({ theme: { colors } }) => colors.text };
   font-weight: light;
   text-decoration: none;
@@ -37,12 +39,11 @@ export const NavbarLink = styled(HoverEffect)`
   }
 `;
 
-export const ProjectLink = styled(Link)`
-  text-decoration: none;
-`;
-
-export const UnderlinedLink = styled(HoverEffect).attrs({ as: "a"})`
-  color: ${ ({ theme: { colors } }) => colors.text };
+export const ProjectLink = styled(UnderlinedLink).attrs({ as: "a"})`
+  &:after {
+    bottom: -8px;
+    border-bottom: 5px solid ${ ({ theme: { colors } }) => colors.current };
+  }
 `;
 
 export const UnstyledLink = styled.a`

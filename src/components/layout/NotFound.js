@@ -1,14 +1,16 @@
 import React from 'react';
 import { HeaderText, NormalText } from '../view/Text';
 import { withTheme } from 'styled-components'
+import { CenteredContainer } from '../view/Container';
+import { UnderlinedLink } from '../view/Link';
 
 
-function Home(props) {
+function Home() {
   return (
-    <div className="not-found-page">
-      <HeaderText color={props.theme.colors.current}>Page not found</HeaderText>
-      <NormalText style={{textAlign: "center"}}>Page not found :(</NormalText>
-    </div>
+    <CenteredContainer className="not-found-page">
+      <HeaderText>Page not found</HeaderText>
+      <NormalText>Click <UnderlinedLink to={'/'}>here</UnderlinedLink> to return home.</NormalText>
+    </CenteredContainer>
   );
 }
 

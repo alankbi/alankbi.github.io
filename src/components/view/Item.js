@@ -1,14 +1,15 @@
 import React from 'react';
-import { ProjectLink } from './Link';
+import { UnstyledLink } from './Link';
 import Projects from '../../data/Projects'
 import { ItemTitleText, ItemDescriptionText } from '../view/Text';
 import { ItemContainer, ItemBottomTitle, ItemDescription } from '../view/Container'
+import { Link } from 'react-router-dom';
 
 
 function Item(props) {
   const project = Projects[props.project];
   return (
-    <ProjectLink to={"/project/" + props.project}>
+    <UnstyledLink as={Link} to={"/project/" + props.project}>
       <ItemContainer image={project.image}>
         <ItemDescription>
           <ItemDescriptionText>{project.description}</ItemDescriptionText>
@@ -18,7 +19,7 @@ function Item(props) {
           <ItemTitleText>{project.title}</ItemTitleText>
         </ItemBottomTitle>
       </ItemContainer>
-    </ProjectLink>
+    </UnstyledLink>
   );
 }
 

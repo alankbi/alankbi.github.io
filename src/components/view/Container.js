@@ -1,8 +1,13 @@
 import React from 'react';
 import styled from 'styled-components'
 
+
 export const CenteredContainer = styled.div`
   text-align: center;
+`;
+
+export const HeaderContainer = styled(CenteredContainer)`
+  margin-bottom: 100px;
 `;
 
 export const LeftAlignedContainer = styled.div`

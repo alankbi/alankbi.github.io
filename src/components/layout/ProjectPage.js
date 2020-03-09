@@ -1,6 +1,6 @@
 import React from 'react';
 import {HeaderText, NormalText, ProjectInfoTitleText} from '../view/Text';
-import { UnderlinedLink } from '../view/Link';
+import { ProjectLink } from '../view/Link';
 import {CenteredContainer, LeftAlignedContainer} from '../view/Container';
 import { Row, Column } from '../view/Grid';
 import { ProjectImage } from '../view/Image';
@@ -24,16 +24,18 @@ function ProjectPage(props) {
   return (
     <div className="project-page">
       <CenteredContainer>
-        <UnderlinedLink href={project.link} target={'_blank'}>
+        <ProjectLink href={project.link} target={'_blank'}>
           <HeaderText color={props.theme.colors.current}>{project.title}</HeaderText>
-        </UnderlinedLink>
+        </ProjectLink>
         <FontAwesomeIcon icon={ faLink } style={{verticalAlign: 'super', marginLeft: '10px'}}/>
       </CenteredContainer>
+
       <CenteredContainer>
         <Row style={{marginTop: '20px'}}>
           <Column>
             <ProjectImage src={project.image} alt={project.title} />
           </Column>
+
           <Column style={{padding: '0px 40px'}}>
             <LeftAlignedContainer className="project-info">
               <ProjectInfoTitleText>Description</ProjectInfoTitleText>

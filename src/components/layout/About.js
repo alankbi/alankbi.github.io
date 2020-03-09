@@ -1,18 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { CenteredContainer, HeaderContainer } from '../view/Container';
+import { HeaderText, NormalText } from '../view/Text';
 
 function About() {
   return (
     <div className="about-page">
-      <h1>Alan Bi's About Page</h1>
-      <h4>This is the about page for my website.</h4>
+      <HeaderContainer>
+        <HeaderText>Hi, I'm Alan.</HeaderText>
+      </HeaderContainer>
 
-      <Link to="/">
-        Home
-      </Link>
-      <Link to="/blog">
-        Blog
-      </Link>
+
     </div>
   );
 }
