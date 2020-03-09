@@ -16,7 +16,7 @@ function Home(props) {
       </CenteredContainer>
 
       <CenteredContainer>
-        {Object.keys(Projects).map((project) => <Item project={project} />)}
+        {Object.keys(Projects).map((project) => <Item key={project} project={project} />)}
       </CenteredContainer>
     </div>
   );

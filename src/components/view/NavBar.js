@@ -39,13 +39,13 @@ const NavBar = withRouter(function (props) {
   return (
     <Absolute className="navbar">
       <nav>
-        <LeftHeader to="/blog" active={url.startsWith("/blog")}>
+        <LeftHeader to="/blog" active={url.startsWith("/blog") ? 1 : undefined}>
           Blog
         </LeftHeader>
-        <RightHeader to="/about" active={url.startsWith("/about")}>
+        <RightHeader to="/about" active={url.startsWith("/about") ? 1 : undefined}>
           About
         </RightHeader>
-        <CenterHeader to="/" active={url === "/"}>
+        <CenterHeader to="/" active={url === "/" ? 1 : undefined}>
           ALAN BI
         </CenterHeader>
       </nav>

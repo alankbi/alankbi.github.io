@@ -40,7 +40,7 @@ function ProjectPage(props) {
               <NormalText>{project.longdescription}</NormalText>
 
               <ProjectInfoTitleText>Tags</ProjectInfoTitleText>
-              {project.tags.map((tag) => <Tag tag={tag}/>)}
+              {project.tags.map((tag) => <Tag key={tag} tag={tag}/>)}
             </LeftAlignedContainer>
           </Column>
         </Row>
