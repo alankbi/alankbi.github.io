@@ -4,6 +4,7 @@ import styled from 'styled-components'
 
 export const HeaderText = styled.h1`
   display: inline-block;
+  margin: 0;
   color: ${ ({ theme: { colors } }) => colors.text };
   font-weight: bold;
   text-align: center;
@@ -34,7 +35,7 @@ export const ItemDescriptionText = styled.p`
   font-size: ${ ({ theme: { fontSizes } }) => fontSizes.itemdesc };
 `;
 
-export const ProjectInfoTitleText = styled.h2`
+export const TitleText = styled.h2`
   color: ${ ({ theme: { colors } }) => colors.text };
   font-size: ${ ({ theme: { fontSizes } }) => fontSizes.title };
   font-weight: bold;

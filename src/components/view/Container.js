@@ -7,7 +7,7 @@ export const CenteredContainer = styled.div`
 `;
 
 export const HeaderContainer = styled(CenteredContainer)`
-  margin-bottom: 100px;
+  margin-bottom: ${({ margin }) => margin ? margin : '100px'};
 `;
 
 export const LeftAlignedContainer = styled.div`

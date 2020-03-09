@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 
 export const UnderlinedLink = styled(Link)`
+  display: inline-block;
   position: relative;
   text-decoration: none;
   color: ${ ({ theme: { colors } }) => colors.text };
@@ -12,7 +13,7 @@ export const UnderlinedLink = styled(Link)`
     content: "";
     position: absolute;
     left: 0%;
-    bottom: -3px;
+    bottom: 0px;
     height: 0px;
     width: 100%;
     border-bottom: 3px solid ${ ({ theme: { colors } }) => colors.current };
@@ -41,7 +42,7 @@ export const NavbarLink = styled(UnderlinedLink)`
 
 export const ProjectLink = styled(UnderlinedLink).attrs({ as: "a"})`
   &:after {
-    bottom: -8px;
+    bottom: 0px;
     border-bottom: 5px solid ${ ({ theme: { colors } }) => colors.current };
   }
 `;

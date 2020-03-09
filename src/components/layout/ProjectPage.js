@@ -1,12 +1,12 @@
 import React from 'react';
-import {HeaderText, NormalText, ProjectInfoTitleText} from '../view/Text';
+import { HeaderText, NormalText, TitleText } from '../view/Text';
 import { ProjectLink } from '../view/Link';
-import {CenteredContainer, LeftAlignedContainer} from '../view/Container';
+import { CenteredContainer, HeaderContainer, LeftAlignedContainer } from '../view/Container';
 import { Row, Column } from '../view/Grid';
-import { ProjectImage } from '../view/Image';
+import { SquareImage } from '../view/Image';
 import Projects from '../../data/Projects';
 import NotFound from './NotFound'
-import { withTheme} from 'styled-components';
+import { withTheme } from 'styled-components';
 import { useParams } from 'react-router-dom';
 import Tag from '../view/Tag';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -23,25 +23,25 @@ function ProjectPage(props) {
 
   return (
     <div className="project-page">
-      <CenteredContainer>
-        <ProjectLink href={project.link} target={'_blank'}>
+      <HeaderContainer margin={"55px"}>
+        <ProjectLink href={project.link} target={"_blank"}>
           <HeaderText color={props.theme.colors.current}>{project.title}</HeaderText>
         </ProjectLink>
-        <FontAwesomeIcon icon={ faLink } style={{verticalAlign: 'super', marginLeft: '10px'}}/>
-      </CenteredContainer>
+        <FontAwesomeIcon icon={ faLink } style={{verticalAlign: "super", marginLeft: "10px"}}/>
+      </HeaderContainer>
 
       <CenteredContainer>
-        <Row style={{marginTop: '20px'}}>
+        <Row style={{marginTop: "20px"}}>
           <Column>
-            <ProjectImage src={project.image} alt={project.title} />
+            <SquareImage src={project.image} alt={project.title} />
           </Column>
 
-          <Column style={{padding: '0px 40px'}}>
+          <Column style={{padding: "0px 40px"}}>
             <LeftAlignedContainer className="project-info">
-              <ProjectInfoTitleText>Description</ProjectInfoTitleText>
+              <TitleText>Description</TitleText>
               <NormalText>{project.longdescription}</NormalText>
 
-              <ProjectInfoTitleText>Tags</ProjectInfoTitleText>
+              <TitleText>Tags</TitleText>
               {project.tags.map((tag) => <Tag key={tag} tag={tag}/>)}
             </LeftAlignedContainer>
           </Column>

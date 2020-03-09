@@ -21,6 +21,7 @@ export const ThemeConfig = {
   fontSizes: {
     small: '15px',
     normal: '18px',
+    large: '24px',
     title: '28px',
     header: '50px',
     itemtitle: '40px',
