@@ -53,7 +53,7 @@ class App extends Component {
                 <Route exact path="/" component={Home}/>
                 <Route exact path="/blog" component={Blog}/>
                 <Route exact path="/about" component={About}/>
-                <Route path="/project/:project" component={ProjectPage}/>
+                <Route path="/projects/:project" component={ProjectPage}/>
                 <Route component={NotFound}/>
               </Switch>
             </Content>

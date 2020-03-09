@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 function Item(props) {
   const project = Projects[props.project];
   return (
-    <UnstyledLink as={Link} to={"/project/" + props.project}>
+    <UnstyledLink as={Link} to={"/projects/" + props.project}>
       <ItemContainer image={project.image}>
         <ItemDescription>
           <ItemDescriptionText>{project.description}</ItemDescriptionText>

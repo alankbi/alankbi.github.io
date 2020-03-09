@@ -9,13 +9,13 @@ function Social(props) {
   const color = props.color ? props.color : undefined;
   return (
     <div>
-      <UnstyledLink href={"mailto:alan.bi326@gmail.com"} color={color}>
+      <UnstyledLink href={"mailto:alan.bi326@gmail.com"} color={color} target={"_blank"}>
         <FontAwesomeIcon icon={faEnvelope}/>
       </UnstyledLink>
-      <UnstyledLink href={"https://github.com/alankbi"} color={color}>
+      <UnstyledLink href={"https://github.com/alankbi"} color={color} target={"_blank"}>
         <FontAwesomeIcon icon={faGithub}/>
       </UnstyledLink>
-      <UnstyledLink href={"https://twitter.com/alankbi"} color={color}>
+      <UnstyledLink href={"https://twitter.com/alankbi"} color={color} target={"_blank"}>
         <FontAwesomeIcon icon={faTwitter}/>
       </UnstyledLink>
     </div>

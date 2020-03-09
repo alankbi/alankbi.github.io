@@ -36,7 +36,7 @@ function About() {
                 <UnderlinedLink to={"/projects/hackduke"}>social good.</UnderlinedLink>
               </NormalText>
 
-              <NormalText>In the past, I interned at <UnderlinedLink to={"/projects/expedia"}>Expedia</UnderlinedLink> (2018)&nbsp;
+              <NormalText>In the past, I interned at <UnderlinedLink to={"/projects/expedia"}>Expedia</UnderlinedLink> (2018)
                 and <UnderlinedLink to={"/projects/uwcse"}>UW CSE</UnderlinedLink> (2019) doing software development
                 and CS research, respectively. In my free time, I enjoy playing table tennis and watching random clips
                 on YouTube.
