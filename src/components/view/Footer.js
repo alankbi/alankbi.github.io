@@ -24,6 +24,8 @@ const ColorButton = styled.button`
   height: 20px;
   border-radius: 10px;
   
+  margin-left: 10px;
+  
   &:focus {
     outline:0;
   }
@@ -47,7 +49,7 @@ const SocialFooter = styled.div`
 function NavBar(props) {
   return (
     <BottomPosition className="footer">
-      <ColorChangeText>Theme: </ColorChangeText>
+      {/*<ColorChangeText>Theme: </ColorChangeText>*/}
       <ColorButton onClick={props.colorChange} />
 
       <SocialFooter><Social/></SocialFooter>

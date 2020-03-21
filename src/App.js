@@ -1,24 +1,14 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import NavBar from './components/view/NavBar';
 import Footer from './components/view/Footer';
-import Home from './components/layout/Home';
-import Blog from './components/layout/Blog';
-import About from './components/layout/About';
-import ProjectPage from './components/layout/ProjectPage';
-import NotFound from './components/layout/NotFound';
 import Theme, { ThemeConfig } from './Theme'
 import styled from 'styled-components';
+import Content from './Content';
 
 
 const Container = styled.div`
   font-family: ${ ({ theme }) => theme.font };
-`;
-
-const Content = styled.div`
-  margin: 160px auto;
-  width: 80%;
-  justify-content: center;
 `;
 
 class App extends Component {
@@ -48,15 +38,9 @@ class App extends Component {
         <BrowserRouter>
           <Container className="app">
             <NavBar/>
-            <Content style={{marginBottom: "120px"}}>
-              <Switch>
-                <Route exact path="/" component={Home}/>
-                <Route exact path="/blog" component={Blog}/>
-                <Route exact path="/about" component={About}/>
-                <Route path="/projects/:project" component={ProjectPage}/>
-                <Route component={NotFound}/>
-              </Switch>
-            </Content>
+
+            <Content />
+
             <Footer colorChange={this.changeColor} />
           </Container>
         </BrowserRouter>
