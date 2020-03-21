@@ -29,6 +29,7 @@ const RightHeader = styled(NavbarLink)`
 const CenterHeader = styled(NavbarLink)`
   display: inline-block;
   margin: 0 auto;
+  margin-top: -2px;
   font-weight: 700;
   font-size: ${ ({ theme: { fontSizes } }) => fontSizes.navbartitle };
 `;

@@ -40,10 +40,20 @@ const ColorChangeText = styled(GrayText)`
 const SocialFooter = styled.div`
   position: absolute;
   right: 20px;
+  bottom: 10px;
+  
   ${UnstyledLink} {
     margin: 4px;
     font-size: ${ ({ theme: { fontSizes }}) => fontSizes.normal };
+    
+    @media (max-width: 550px) {
+      display: block;
+    }
   }
+  
+  @media (max-width: 550px) {
+      right: 10px;
+    }
 `;
 
 function NavBar(props) {

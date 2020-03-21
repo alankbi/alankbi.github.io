@@ -13,7 +13,6 @@ const StyledContent = styled.div`
   margin: 160px auto;
   width: 80%;
   justify-content: center;
-  padding-bottom: 200px;
   
   .fade-enter {
     opacity: 0.01;
@@ -44,6 +43,10 @@ const StyledContent = styled.div`
     top: 0;
     left: 0;
     margin-bottom: 120px;
+  }
+  
+  @media (max-width: 500px) {
+    width: 90%;
   }
 `;
 

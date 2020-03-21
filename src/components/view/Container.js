@@ -82,4 +82,9 @@ export const ItemContainer = styled.div`
   &:hover ${ItemBottomTitle} {
     z-index: 0;
   }
+  
+  @media (max-width: 500px) {
+    width: 250px;
+    height: 250px;
+  }
 `;

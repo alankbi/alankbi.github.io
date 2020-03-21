@@ -4,6 +4,10 @@ import styled from 'styled-components'
 
 export const Row = styled.div`
   display: flex;
+  
+  @media (max-width: 1000px) {
+    display: inline-block;
+  }
 `;
 
 export const Column = styled.div`
@@ -11,6 +15,7 @@ export const Column = styled.div`
   margin: 12px;
   
   // @media (max-width: 1000px) {
-  //   flex: 100%;
+  //   float: none;
+  //   background-color: green;
   // }
 `;

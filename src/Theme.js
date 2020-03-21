@@ -25,6 +25,7 @@ export const ThemeConfig = {
     title: '28px',
     header: '50px',
     itemtitle: '40px',
+    itemtitlemobile: '32px',
     itemdesc: '22px',
     navbar: '16px',
     navbartitle: '20px',

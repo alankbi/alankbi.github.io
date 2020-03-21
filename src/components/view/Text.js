@@ -27,6 +27,10 @@ export const ItemTitleText = styled.p`
   text-align: center;
   font-size: ${ ({ theme: { fontSizes } }) => fontSizes.itemtitle };
   font-weight: bold;
+  
+  @media (max-width: 500px) {
+    font-size: ${ ({ theme: { fontSizes } }) => fontSizes.itemtitlemobile };
+  }
 `;
 
 export const ItemDescriptionText = styled.p`
