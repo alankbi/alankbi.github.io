@@ -88,3 +88,44 @@ export const ItemContainer = styled.div`
     height: 250px;
   }
 `;
+
+export const BlogItemTextContainer = styled.div`
+  min-height: 120px;
+  padding: 10px 10px;
+  position: relative;
+`;
+
+export const BlogContainer = styled.div`
+  width: 300px;
+  text-align: center;
+  box-shadow: ${ ({ theme: { gradients } }) => gradients.itemshadow } };
+  background-color: ${ ({ theme: { colors } }) => colors.white };
+  margin: 15px;
+  border-radius: 0px;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  
+  ${BlogItemTextContainer}::after {
+    content: "";
+    position: absolute;
+    left: 0%;
+    top: 0px;
+    height: 0px;
+    width: 100%;
+    border-bottom: 2px solid ${ ({ theme: { colors } }) => colors.current };
+    transition: 0.3s all;
+  }
+  
+  &:hover {
+    ${BlogItemTextContainer}::after {
+      left: 50%;
+      width: 0%;
+      transition: 0.3s all;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    width: 250px;
+  }
+`;

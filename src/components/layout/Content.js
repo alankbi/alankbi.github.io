@@ -1,12 +1,13 @@
 import React from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
-import Home from './components/layout/Home';
-import Blog from './components/layout/Blog';
-import About from './components/layout/About';
-import ProjectPage from './components/layout/ProjectPage';
-import NotFound from './components/layout/NotFound';
+import Home from './Home';
+import Blog from './Blog';
+import About from './About';
+import ProjectPage from './ProjectPage';
+import NotFound from './NotFound';
 import styled from 'styled-components';
 import { Route, Switch, withRouter } from 'react-router-dom';
+import BlogPage from './BlogPage';
 
 
 const StyledContent = styled.div`
@@ -65,6 +66,7 @@ function Content({ location }) {
               <Route exact path="/blog" component={Blog} />
               <Route exact path="/about" component={About} />
               <Route path="/projects/:project" component={ProjectPage} />
+              <Route path="/blog/:blog+" component={BlogPage} />
               <Route component={NotFound} />
             </Switch>
           </section>

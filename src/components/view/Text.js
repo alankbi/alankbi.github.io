@@ -44,3 +44,9 @@ export const TitleText = styled.h2`
   font-size: ${ ({ theme: { fontSizes } }) => fontSizes.title };
   font-weight: bold;
 `;
+
+export const BlogTitleText = styled.h2`
+  color: ${ ({ theme: { colors } }) => colors.text };
+  font-size: ${ ({ theme: { fontSizes } }) => fontSizes.title };
+  font-weight: normal;
+`;

@@ -1,20 +1,23 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { HeaderText } from '../view/Text';
+import { HeaderContainer, CenteredContainer } from '../view/Container';
+import { withTheme } from 'styled-components'
+import BlogPosts from '../../data/BlogPosts';
+import BlogItem from '../view/BlogItem';
 
-function Blog() {
+
+function Blog(props) {
   return (
     <div className="blog-page">
-      <h1>Alan Bi's Blog Page</h1>
-      <h4>This is the blog page for my website.</h4>
+      <HeaderContainer>
+        <HeaderText color={props.theme.colors.current}>Blog</HeaderText>
+      </HeaderContainer>
 
-      <Link to="/">
-        Home
-      </Link>
-      <Link to="/about">
-        About
-      </Link>
+      <CenteredContainer>
+        {Object.keys(BlogPosts).map((blog) => <BlogItem key={blog} blog={blog} />)}
+      </CenteredContainer>
     </div>
   );
 }
 
-export default Blog;
+export default withTheme(Blog);

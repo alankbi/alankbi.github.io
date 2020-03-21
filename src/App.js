@@ -4,7 +4,7 @@ import NavBar from './components/view/NavBar';
 import Footer from './components/view/Footer';
 import Theme, { ThemeConfig } from './Theme'
 import styled from 'styled-components';
-import Content from './Content';
+import Content from './components/layout/Content';
 
 
 const Container = styled.div`
