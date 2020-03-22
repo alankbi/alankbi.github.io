@@ -1,18 +1,3 @@
----
-layout: blog_layout
-title: My experience launching Statsify, my first-ever product
-image: /assets/images/blog-images/2019/launching_statsify.png
-permalink: /blog/2019-03-03/my-experience-launching-statsify/
-date: March 3, 2019
-links: 
-  - url: https://www.producthunt.com/posts/statsify
-    desc: Statsify on Product Hunt
-  - url: https://www.webdesignernews.com/entry/2550208
-    desc: Statsify on Web Designer News
-  - url: https://github.com/alankbi/statsify-api
-    desc: Source code on GitHub
----
-
 On February 18, I launched [Statsify](https://www.statsify.us) on Product Hunt. After a little while, Statsify was featured on the front page, which gave it a decent spike of traffic over the next few days. This blog post talks about my experience throughout both the development process and launch. 
 
 Before we get into the details, here are some basic numbers for those of you curious: 
@@ -39,7 +24,7 @@ Before I started developing the product, I did a lot of research on best design 
 I began by coding the backend web scraping functionality. Along the way, I came up with a lot of new ideas, so it was helpful to create a [Kanban board](https://en.wikipedia.org/wiki/Kanban_board) in Trello to organize these in Backlog, Pending, In Progress, and Done lists. I found that having lists also helped me prioritize which features to include in my MVP and which I'd have to come back to. 
 
 ![My Trello board](/assets/images/blog-images/2019/statsify_trello.png)
-<br><br>
+
 
 Along with the Trello board, unit tests saved me a ton of time. This was my first project with real unit tests, and I've lost count of the number of times I changed a few lines of code and broke several unit tests, alerting me of a mistake. If I had to choose one thing I learned the most from the development process, it would be to write unit tests whenever possible, even for small side projects. 
 
@@ -49,20 +34,20 @@ Now on to the frontend! Since my original goal was to learn more about web scrap
 
 ![Screenshot of website at beginning](/assets/images/blog-images/2019/statsify_beginning.png)
 _So far, I've just laid out all the elements using default Bootstrap styles._
-<br><br>
+
 
 ![Screenshot of website halfway through](/assets/images/blog-images/2019/statsify_middle.png)
 _Added some shadows, sharpened corners, and messed with font styling. Looks a lot better!_
-<br><br>
+
 
 ![Screenshot of website at the end](/assets/images/blog-images/2019/statsify_end.png)
 _Finishing touches, including a background image and better header/footer buttons._
-<br><br>
+
 
 I used [Chart.js](https://www.chartjs.org/) for the visualizations: 
 
 ![Screenshot of website visualizations](/assets/images/blog-images/2019/statsify_visualizations.png)
-<br><br>
+
 
 And lastly, the Chrome extension, which would allow users to visualize the pages they're currently browsing. The extension is really just loading an iframe of statsify.us with a query string for the url to visualize, so it was very low effort. Some parts of the website (search bar, JSON response, and a few other buttons) I felt weren't worth showing in the Chrome extension, but there was an easy workaround to accomplish that: I simply included the query string extensionMode=true in the iframe src url, and the website JavaScript code could then check for this and change the UI accordingly (click [here](https://www.statsify.us?extensionMode=true&url=alanbi.com) to see what it looks like). 
 
@@ -71,17 +56,16 @@ And lastly, the Chrome extension, which would allow users to visualize the pages
 At this point, Statsify was ready to launch. After reading Product Hunt's [guidelines](https://blog.producthunt.com/how-to-launch-on-product-hunt-7c1843e06399) and preparing all my press materials, I submitted Statsify a few minutes after midnight on Monday, February 18. The result is as follows: 
 
 ![Statsify traffic following the launch](/assets/images/blog-images/2019/statsify_traffic.png)
-<br><br>
 
 In the first two days, the website got 2165 unique visitors. Surprisingly, Product Hunt was not the only source of traffic; Statsify got posted by other people (or maybe bots?) on sites like [Web Designer News](https://www.webdesignernews.com/entry/2550208) (this is probably where that mysterious spike in traffic came from). In fact, Statsify did _really_ well on Web Designer News, becoming the top voted submission in the past 90 days:
 
 ![Statsify on Web Designer News](/assets/images/blog-images/2019/statsify_webdesignernews.png)
-<br><br>
+
 
 I ended up getting almost as much traffic from Web Designer News as Product Hunt. 
 
 ![Statsify traffic sources (Product Hunt and Web Designer News)](/assets/images/blog-images/2019/statsify_traffic_sources.png)
-<br><br>
+
 
 Overall, I'm very lucky that Statsify was featured on these two sites. A few days later, I posted Statsify on sites like Hacker News and Indie Hackers, although none did nearly as well. 
 
@@ -94,6 +78,6 @@ I'm probably not the most qualified person to give advice about launching a prod
 Statsify was an amazing learning experience. In the beginning, I never even planned to publicize it. But after deciding to do so, it forced me to hold the project to a higher standard than my other projects, knowing that others could end up using it. I think I learned a lot more this way. 
 
 If you're working on a side project, it's worth considering posting it on sites like Product Hunt. The worst case scenario is that no one likes it or uses it, in which case you can go back to developing it as a side project or move on to something else. However, I'd imagine it's more likely that you'll get good feedback and insights that you wouldn't have otherwise. 
-<br><br>
+
 
 _P.S. If you're interested in seeing the source code for Statsify, I recently made it public on GitHub, which you can check out [here](https://github.com/alankbi/statsify-api)._

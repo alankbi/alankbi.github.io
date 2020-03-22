@@ -132,5 +132,5 @@ export const BlogItemContainer = styled.div`
 
 export const BlogPageContainer = styled.div`
   margin: 0 auto;
-  width: 80%;
+  width: 75%;
 `;

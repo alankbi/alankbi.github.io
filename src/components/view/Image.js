@@ -7,13 +7,24 @@ export const SquareImage = styled.img`
   box-shadow: ${ ({ theme: { gradients } }) => gradients.itemshadow };
   margin-bottom: 30px;
   
-  @media (max-width: 1000px) {
+  @media (max-width: 1000px) and (min-width: 700px) {
     width: 50%;
+  }
+  
+  @media (max-width: 699px) {
+    width: 70%;
   }
 `;
 
 export const BlogImage = styled.img`
-  width: 70%;
+  margin: 40px auto;
+  display: block;
+  width: 90%;
+  box-shadow: ${ ({ theme: { gradients } }) => gradients.itemshadow };
+  
+  @media (max-width: 500px) {
+    width: 100%;
+  }
 `;
 
 export const BlogItemImage = styled.img`

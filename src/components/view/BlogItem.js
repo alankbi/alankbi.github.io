@@ -1,7 +1,7 @@
 import React from 'react';
 import { UnstyledLink } from './Link';
 import BlogPosts from '../../data/BlogPosts'
-import { BlogTitleText } from '../view/Text';
+import { BlogItemTitleText } from '../view/Text';
 import { BlogItemContainer, BlogItemTextContainer } from '../view/Container'
 import { Link } from 'react-router-dom';
 import { BlogItemImage } from './Image';
@@ -15,7 +15,7 @@ function BlogItem(props) {
         <BlogItemImage src={blog.image} alt={"Blog item image"} />
 
         <BlogItemTextContainer>
-          <BlogTitleText>{blog.title}</BlogTitleText>
+          <BlogItemTitleText>{blog.title}</BlogItemTitleText>
         </BlogItemTextContainer>
       </BlogItemContainer>
     </UnstyledLink>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { HeaderText, TitleText } from '../view/Text';
+import { HeaderText, NormalTextInline, TitleText, BlogPostTitleText } from '../view/Text';
 import { BlogPageContainer, CenteredContainer, HeaderContainer, LeftAlignedContainer } from '../view/Container';
 import { BlogImage } from '../view/Image';
 import NotFound from './NotFound'
@@ -7,6 +7,7 @@ import { withTheme } from 'styled-components';
 import { withRouter} from 'react-router-dom';
 import BlogPosts from '../../data/BlogPosts';
 import ReactMarkdown from 'react-markdown';
+import { UnderlinedExternalLink } from '../view/Link';
 
 class ProjectPage extends Component {
   constructor(props) {
@@ -43,24 +44,35 @@ class ProjectPage extends Component {
     if (!blog) {
       return (
         <BlogPageContainer className="blog-post-page">
-          <HeaderContainer margin={"40px"}>
+          <HeaderContainer margin={"50px"}>
             <TitleText>Loading...</TitleText>
           </HeaderContainer>
         </BlogPageContainer>
       );
     }
 
+    const options = {
+      escapeHtml: false,
+      linkTarget: '_blank',
+      renderers: {
+        text: NormalTextInline,
+        link: UnderlinedExternalLink,
+        image: BlogImage,
+        heading: BlogPostTitleText,
+      }
+    };
+
     return (
       <BlogPageContainer className="blog-post-page">
-        <HeaderContainer margin={"40px"}>
+        <HeaderContainer margin={"50px"}>
           <HeaderText>{blog.title}</HeaderText>
         </HeaderContainer>
 
         <CenteredContainer>
-          <BlogImage src={blog.image} alt={blog.title} />
+          <BlogImage src={blog.image} alt={blog.title} style={{marginBottom: "60px"}} />
 
           <LeftAlignedContainer className="blog-content">
-            <ReactMarkdown source={this.state.markdown} />
+            <ReactMarkdown source={this.state.markdown} {...options} />
           </LeftAlignedContainer>
         </CenteredContainer>
       </BlogPageContainer>

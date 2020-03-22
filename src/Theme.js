@@ -24,6 +24,7 @@ export const ThemeConfig = {
     large: '24px',
     title: '28px',
     header: '50px',
+    headermobile: '40px',
     itemtitle: '40px',
     itemtitlemobile: '32px',
     itemdesc: '22px',

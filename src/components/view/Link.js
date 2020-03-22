@@ -27,6 +27,10 @@ export const UnderlinedLink = styled(Link)`
   }
 `;
 
+export const UnderlinedExternalLink = styled(UnderlinedLink).attrs({ as: 'a'})`
+  
+`;
+
 
 export const NavbarLink = styled(UnderlinedLink)`
   color: ${ ({ theme: { colors } }) => colors.text };
@@ -40,7 +44,7 @@ export const NavbarLink = styled(UnderlinedLink)`
   }
 `;
 
-export const ProjectLink = styled(UnderlinedLink).attrs({ as: "a"})`
+export const ProjectLink = styled(UnderlinedLink).attrs({ as: 'a'})`
   &:after {
     bottom: 0px;
     border-bottom: 5px solid ${ ({ theme: { colors } }) => colors.current };
