@@ -2,7 +2,7 @@ export default {
   detecto: {
     title: 'Detecto',
     description: 'Build fully-functioning computer vision models with PyTorch.',
-    image: '/images/project-images/detecto.svg',
+    image: '/assets/images/project-images/detecto.svg',
     link: 'https://github.com/alankbi/detecto',
     tags: ['project', 'python', 'machine-learning'],
     longdescription: 'Detecto is a Python package that allows you to build fully-functioning ' +
@@ -14,12 +14,12 @@ export default {
   bidbar: {
     title: 'Bidbar',
     description: 'Mac app that allows users to save and run commands from the menu bar.',
+    image: '/assets/images/project-images/bidbar.png',
+    link: 'https://www.getbidbar.com',
+    tags: ['project', 'swift', 'apps'],
     longdescription: 'Bidbar is a Mac app that allows you to save Terminal commands in the menu bar ' +
       'and run/copy them with keyboard shortcuts. I\'ve always found it tedious to type out/memorize ' +
       'long and difficult Terminal commands. As a result, I created Bidbar, which allows you to save ' +
       'and run them with a click of a button!',
-    image: '/images/project-images/bidbar.png',
-    link: 'https://www.getbidbar.com',
-    tags: ['project', 'swift', 'apps'],
   },
 };

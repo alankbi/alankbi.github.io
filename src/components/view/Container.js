@@ -95,7 +95,7 @@ export const BlogItemTextContainer = styled.div`
   position: relative;
 `;
 
-export const BlogContainer = styled.div`
+export const BlogItemContainer = styled.div`
   width: 300px;
   text-align: center;
   box-shadow: ${ ({ theme: { gradients } }) => gradients.itemshadow } };
@@ -128,4 +128,9 @@ export const BlogContainer = styled.div`
   @media (max-width: 500px) {
     width: 250px;
   }
+`;
+
+export const BlogPageContainer = styled.div`
+  margin: 0 auto;
+  width: 80%;
 `;

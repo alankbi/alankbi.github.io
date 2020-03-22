@@ -24,7 +24,7 @@ function About() {
       <CenteredContainer>
         <Row>
           <Column>
-            <SquareImage src={"/images/about.jpg"} alt={"A picture of me"} />
+            <SquareImage src={"/assets/images/about.jpg"} alt={"A picture of me"} />
           </Column>
 
           <Column style={{padding: "0px 40px"}}>

@@ -12,6 +12,10 @@ export const SquareImage = styled.img`
   }
 `;
 
+export const BlogImage = styled.img`
+  width: 70%;
+`;
+
 export const BlogItemImage = styled.img`
   width: 100%;
   display: block;
