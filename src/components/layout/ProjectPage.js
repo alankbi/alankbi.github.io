@@ -39,10 +39,14 @@ function ProjectPage(props) {
           <Column style={{padding: "0px 40px"}}>
             <LeftAlignedContainer className="project-info">
               <TitleText>Description</TitleText>
-              <NormalText>{project.longdescription}</NormalText>
+              <NormalText>{project.longdescription ? project.longdescription : project.description}</NormalText>
 
-              <TitleText>Tags</TitleText>
-              {project.tags.map((tag) => <Tag key={tag} tag={tag}/>)}
+              {project.tags &&
+                <div>
+                  <TitleText>Tags</TitleText>
+                  {project.tags.map((tag) => <Tag key={tag} tag={tag}/>)}
+                </div>
+              }
             </LeftAlignedContainer>
           </Column>
         </Row>
