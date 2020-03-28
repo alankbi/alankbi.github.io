@@ -1,15 +1,36 @@
 export default {
+  hackduke: {
+    title: 'HackDuke',
+    description: 'Sponsorship lead for the nation\'s premier tech + social good hackathon.',
+    image: '/assets/images/project/hackduke.png',
+    link: 'https://hackduke.org/',
+    tags: ['work', 'leadership', 'social-good'],
+  },
   detecto: {
     title: 'Detecto',
     description: 'Build fully-functioning computer vision models with PyTorch.',
     image: '/assets/images/project/detecto.svg',
     link: 'https://github.com/alankbi/detecto',
-    tags: ['project', 'python', 'ml'],
+    tags: ['project', 'python', 'machine-learning'],
     longdescription: 'Detecto is a Python package that allows you to build fully-functioning ' +
       'computer vision and object detection models with just 5 lines of code. Inference on still ' +
       'images and videos, transfer learning on custom datasets, and serialization of models to ' +
       'files are just a few of Detecto\'s features. Detecto is built on top of PyTorch, allowing ' +
       'an easy transfer of models between the two libraries.',
+  },
+  dukeml: {
+    title: 'Duke ML',
+    description: 'Organizing large-scale machine learning events for the student body.',
+    image: '/assets/images/project/dml.png',
+    link: 'https://dukeml.org/',
+    tags: ['work', 'leadership', 'machine-learning'],
+  },
+  'uw-2019': {
+    title: 'UW CSE',
+    description: 'Research intern using machine learning to improve mutation testing.',
+    image: '/assets/images/project/uwashington.png',
+    link: '/',
+    tags: ['work', 'intern', 'python', 'machine-learning'],
   },
   bidbar: {
     title: 'Bidbar',
@@ -20,6 +41,13 @@ export default {
     longdescription: 'Bidbar is a Mac app that allows you to save bash commands in the menu bar ' +
       'and run/copy them with keyboard shortcuts. It\'s always tedious having to memorize and type out ' +
       'lengthy, obscure bash commands. With Bidbar, they\'re all just a click of a button or key away!',
+  },
+  teamscode: {
+    title: 'TeamsCode',
+    description: 'Co-president of a 501(c)(3) nonprofit promoting CS to high schoolers.',
+    image: '/assets/images/project/teamscode.png',
+    link: 'https://teamscode.com',
+    tags: ['work', 'leadership', 'social-good'],
   },
   statsify: {
     title: 'Statsify',
@@ -35,12 +63,19 @@ export default {
     link: 'https://github.com/alankbi/trello-easy-due-dates',
     tags: ['project', 'javascript', 'extension'],
   },
+  expedia: {
+    title: 'Expedia Group',
+    description: 'Interned on the Air Experience Team as a full-stack developer.',
+    image: '/assets/images/project/expedia.png',
+    link: 'https://docs.google.com/presentation/d/1ljYnmAM7By8gfDnNmaPnVGYLrkUY_q5yclxtgdL2i5g/edit?usp=sharing',
+    tags: ['work', 'intern', 'java', 'javascript', 'web'],
+  },
   'basic-ml': {
     title: 'ML Models',
     description: 'Python implementations of common machine learning models.',
     image: '/assets/images/project/ml_algorithms.png',
     link: 'https://github.com/alankbi/machine-learning-algorithms',
-    tags: ['project', 'python', 'ml'],
+    tags: ['project', 'python', 'machine-learning'],
   },
   'my-continents': {
     title: 'My Continents',
@@ -70,11 +105,18 @@ export default {
     link: 'https://github.com/alankbi/news-app',
     tags: ['project', 'c#', 'app'],
   },
+  'uw-2017': {
+    title: 'UW CSE',
+    description: 'Research intern helping with a Ph.D. student\'s project called Casper.',
+    image: '/assets/images/project/uwashington.png',
+    link: 'https://casper.uwplse.org',
+    tags: ['work', 'intern', 'php', 'java', 'big-data'],
+  },
   tasklist: {
     title: 'TaskList',
     description: 'My first iOS app, a simple to-do list.',
     image: '/assets/images/project/tasklist.png',
     link: 'https://github.com/alankbi/TaskList',
     tags: ['project', 'c#', 'app'],
-  }
+  },
 };
