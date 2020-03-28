@@ -106,6 +106,11 @@ export const BlogItemContainer = styled.div`
   vertical-align: top;
   position: relative;
   
+  &:hover {
+    box-shadow: ${ ({ theme: { gradients } }) => gradients.itemshadowhover } };
+    transition: 0.3s box-shadow;
+  }
+  
   ${BlogItemTextContainer}::after {
     content: "";
     position: absolute;
@@ -113,7 +118,7 @@ export const BlogItemContainer = styled.div`
     top: 0px;
     height: 0px;
     width: 100%;
-    border-bottom: 2px solid ${ ({ theme: { colors } }) => colors.current };
+    border-bottom: 3px solid ${ ({ theme: { colors } }) => colors.current };
     transition: 0.3s all;
   }
   

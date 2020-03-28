@@ -15,6 +15,7 @@ export const ThemeConfig = {
   },
   gradients: {
     itemshadow: '0 1px 30px rgba(0, 0, 0, 0.12)',
+    itemshadowhover: '0 1px 40px rgba(0, 0, 0, 0.24)',
     colorshadow: '0 0px 8px rgba(0, 0, 0, 0.16)',
   },
   font: 'Lato',

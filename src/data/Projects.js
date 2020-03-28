@@ -71,10 +71,10 @@ export default {
     tags: ['work', 'intern', 'java', 'javascript', 'web'],
   },
   'basic-ml': {
-    title: 'ML Models',
-    description: 'Python implementations of common machine learning models.',
+    title: 'Basic ML',
+    description: 'Python package with implementations of common machine learning models.',
     image: '/assets/images/project/ml_algorithms.png',
-    link: 'https://github.com/alankbi/machine-learning-algorithms',
+    link: 'https://github.com/alankbi/basic-ml',
     tags: ['project', 'python', 'machine-learning'],
   },
   'my-continents': {
