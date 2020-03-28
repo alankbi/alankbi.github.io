@@ -1,18 +1,3 @@
----
-layout: blog_layout
-title: Different ways to learn coding
-image: /assets/images/blog-images/2019/learn_coding.jpg
-permalink: /blog/2019-07-11/ways-to-learn-coding/
-date: July 11, 2019
-links: 
-- url: https://www.coursera.org/
-  desc: Coursera
-- url: https://practiceit.cs.washington.edu/
-  desc: Practice-It
-- url: https://projecteuler.net/
-  desc: Project Euler
----
-
 In this day and age, many people want to learn how to code without knowing where to start. People often find the syntax of programming languages to be intimidating; meanwhile, others want to jump straight to building complex apps and websites without understanding basic programming concepts first. While it's certainly a viable and common path to focus on a specific subset of coding (such as HTML/CSS or data visualization), like for those who just need to know a little bit of coding for their jobs or people who just want to have fun building simple static websites, this blog post will focus on how to learn the fundamentals of programming for those who want to pursue computer science further, such as in college or as a career path. 
 
 ### Programming classes

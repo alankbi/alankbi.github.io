@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { HeaderText, NormalTextInline, TitleText, BlogPostTitleText } from '../view/Text';
+import { HeaderText, NormalTextInline, TitleText, BlogPostTitleText, SmallText } from '../view/Text';
 import { BlogPageContainer, CenteredContainer, HeaderContainer, LeftAlignedContainer } from '../view/Container';
 import { BlogImage } from '../view/Image';
 import NotFound from './NotFound'
@@ -69,7 +69,13 @@ class ProjectPage extends Component {
         </HeaderContainer>
 
         <CenteredContainer>
-          <BlogImage src={blog.image} alt={blog.title} style={{marginBottom: "60px"}} />
+          <SmallText>Published {blog.date} &nbsp;|&nbsp;&nbsp;Read on&nbsp;
+            <UnderlinedExternalLink target={"_blank"} href={"https://medium.com/@alankbi"}>
+              Medium
+            </UnderlinedExternalLink>
+          </SmallText>
+
+          <BlogImage src={blog.image} alt={blog.title} style={{marginBottom: "60px", marginTop: "10px"}} />
 
           <LeftAlignedContainer className="blog-content">
             <ReactMarkdown source={this.state.markdown} {...options} />

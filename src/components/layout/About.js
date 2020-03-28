@@ -37,7 +37,7 @@ function About() {
               </NormalText>
 
               <NormalText>In the past, I interned at <UnderlinedLink to={"/projects/expedia"}>Expedia</UnderlinedLink> (2018)
-                and <UnderlinedLink to={"/projects/uwcse"}>UW CSE</UnderlinedLink> (2019) doing software development
+                and <UnderlinedLink to={"/projects/uw-2019"}>UW CSE</UnderlinedLink> (2019) doing software development
                 and CS research, respectively. In my free time, I enjoy playing table tennis and watching random clips
                 on YouTube.
               </NormalText>

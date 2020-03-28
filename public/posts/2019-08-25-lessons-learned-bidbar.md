@@ -1,14 +1,3 @@
----
-layout: blog_layout
-title: Lessons learned with Bidbar
-image: /assets/images/blog-images/2019/bidbar.png
-permalink: /blog/2019-09-13/lessons-learned-with-bidbar/
-date: September 13, 2019
-links: 
-- url: https://www.getbidbar.com
-  desc: Bidbar website
----
-
 This past month, I launched my second product: Bidbar, a macOS app that allows programmers to manage Terminal commands from the menu bar and run them with keyboard shortcuts. Since my first launch of [Statsify](/blog/2019-03-03/my-experience-launching-statsify/), I've done many things differently and experienced new successes and failures with Bidbar, resulting in new lessons learned. In this short blog post, I'll share three of these lessons. 
 
 ## Idea validation 

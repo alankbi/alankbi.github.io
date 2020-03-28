@@ -1,14 +1,3 @@
----
-layout: blog_layout
-title: Reflecting on my high school experience
-image: /assets/images/blog-images/2019/high_school.jpg
-permalink: /blog/2019-06-13/high-school-experience-reflection/
-date: June 13, 2019
-links: 
-- url: https://www.mercerislandschools.org/
-  desc: Mercer Island High School website
----
-
 When I entered high school, I was adamant on a few goals: take all the hardest classes, get all As, and go to a good college. At the end of that first semester, I ended with an A- in my English class, failing at my second goal just like that. 
 
 In hindsight, I'm almost grateful that I got that A-. It's easy to see now that my freshman year goals were naive; taking hard classes isn't always the best idea, not having a 4.0 doesn't make you a failure just as having a 4.0 doesn't guarantee you a spot at a good college, and going to a good college is not the end-all-be-all. And after getting that A-, I slowly shifted my focus to more important things rather than continuing to worry about getting all As. 

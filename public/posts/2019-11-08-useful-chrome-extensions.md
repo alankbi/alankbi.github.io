@@ -1,16 +1,3 @@
----
-layout: blog_layout
-title: Useful Chrome extensions
-image: /assets/images/blog-images/2019/chrome_extensions.jpg
-permalink: /blog/2019-11-20/useful-chrome-extensions/
-date: November 20, 2019
-links: 
-  - url: /blog/2019-05-25/my-computer-desktop-arrangement/
-    desc: My computer desktop arrangement
-  - url: https://teamscode.com/blog/teamscode-internal-resources/
-    desc: TeamsCode's internal resources
----
-
 In a [previous blog post](/blog/2019-05-25/my-computer-desktop-arrangement/), I showed off some of the apps I found useful on my computer. Today, I'll be writing about the Chrome extensions that help me browse the web more productively. 
 
 <br><br>
@@ -24,8 +11,8 @@ First up is an ad blocker, which is pretty self-explanatory. Of all the options,
 
 ### Google Translate
 
-<div style="text-align: center">
-    <img alt="Google Translate" src="/assets/images/blog-images/2019/google_translate.png" style="width: 30%;">
+<div style="text-align: center;">
+    <img alt="Google Translate" src="/assets/images/blog-images/2019/google_translate.png" style="width: 30%; box-shadow: 0 1px 30px rgba(0, 0, 0, 0.12);">
 </div>
 <br>
 

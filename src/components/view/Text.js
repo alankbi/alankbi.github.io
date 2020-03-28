@@ -21,6 +21,12 @@ export const NormalText = styled.p`
   line-height: 1.5;
 `;
 
+export const SmallText = styled.p`
+  color: ${ ({ theme: { colors } }) => colors.text };
+  font-size: ${ ({ theme: { fontSizes } }) => fontSizes.small };
+  line-height: 1.5;
+`;
+
 export const NormalTextInline = styled(NormalText)`
   display: inline;
 `;

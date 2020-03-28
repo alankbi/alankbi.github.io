@@ -9,8 +9,10 @@ import { BlogItemImage } from './Image';
 
 function BlogItem(props) {
   const blog = BlogPosts[props.blog];
+  const linkOptions = blog.markdown ? { as: Link, to: '/blog/' + props.blog}
+                                    : { as: 'a', href: props.blog, target: '_blank' };
   return (
-    <UnstyledLink as={Link} to={"/blog/" + props.blog}>
+    <UnstyledLink {...linkOptions}>
       <BlogItemContainer>
         <BlogItemImage src={blog.image} alt={"Blog item image"} />
 

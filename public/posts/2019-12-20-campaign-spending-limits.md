@@ -1,11 +1,3 @@
----
-layout: blog_layout
-title: A case for campaign spending limits
-image: /assets/images/blog-images/2019/spending_limits.png
-permalink: /blog/2019-12-28/case-for-campaign-spending-limits/
-date: December 28, 2019
----
-
 _The following blog post was written as part of the final assignment for my Writing 101 course. It's quite different from what I usually write and I'm far from a political expert, so please don't take it too seriously!_
 
 Campaign finance has always been a controversial topic, especially ever since 2010. If you aren’t familiar, 2010 was the year the Supreme Court voted on _Citizens United v. FEC_, which allowed the formation of Super PACs that can spend unlimited amounts of money on campaigns. This decision caused huge controversy, and people have been calling for the decision to be overruled ever since. 
