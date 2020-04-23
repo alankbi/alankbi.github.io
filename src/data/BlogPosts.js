@@ -1,4 +1,9 @@
 export default {
+  'https://medium.com/pytorch/detecto-build-and-train-object-detection-models-with-pytorch-5f31b68a8109': {
+    title: 'Detecto - An object detection library for PyTorch',
+    image: '/assets/images/blog-images/2020/detecto.png',
+    date: 'April 17, 2020',
+  },
   'https://towardsdatascience.com/build-a-custom-trained-object-detection-model-with-5-lines-of-code-713ba7f6c0fb': {
     title: 'Build a computer vision model with 5 lines of code',
     image: '/assets/images/blog-images/2020/object_detection.png',
