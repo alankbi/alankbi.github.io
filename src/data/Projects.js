@@ -1,4 +1,11 @@
 export default {
+  fidelity: {
+    title: 'Fidelity',
+    description: 'Interned on the trading platform team building services with Java Spring and React.',
+    image: '/assets/images/project/fidelity.png',
+    link: '/',
+    tags: ['work', 'intern', 'java', 'react'],
+  },
   hackduke: {
     title: 'HackDuke',
     description: 'Sponsorship lead for the nation\'s premier tech + social good hackathon.',
