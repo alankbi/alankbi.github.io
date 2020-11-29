@@ -12,9 +12,9 @@ export const UnderlinedLink = styled(Link)`
   &:after {
     content: "";
     position: absolute;
-    left: 0%;
-    bottom: 0px;
-    height: 0px;
+    left: 0;
+    bottom: 0;
+    height: 0;
     width: 100%;
     border-bottom: 3px solid ${ ({ theme: { colors } }) => colors.current };
     transition: 0.3s all;
@@ -22,7 +22,7 @@ export const UnderlinedLink = styled(Link)`
   
   &:hover:after {
     left: 50%;
-    width: 0%;
+    width: 0;
     transition: 0.3s all;
   }
 `;
@@ -34,7 +34,7 @@ export const UnderlinedExternalLink = styled(UnderlinedLink).attrs({ as: 'a'})`
 
 export const NavbarLink = styled(UnderlinedLink)`
   color: ${ ({ theme: { colors } }) => colors.text };
-  font-weight: light;
+  font-weight: normal;
   text-decoration: none;
   
   ${ ({ active, theme: { colors } }) => active ? 
@@ -46,7 +46,7 @@ export const NavbarLink = styled(UnderlinedLink)`
 
 export const ProjectLink = styled(UnderlinedLink).attrs({ as: 'a'})`
   &:after {
-    bottom: 0px;
+    bottom: 0;
     border-bottom: 5px solid ${ ({ theme: { colors } }) => colors.current };
   }
 `;

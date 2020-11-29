@@ -24,7 +24,6 @@ export const ItemBottomTitle = styled.div`
 
 export const ItemDescription = styled.div`
   position: absolute;
-  bottom: 30px;
   left: 10px;
   right: 10px;
   top: 0;
@@ -39,7 +38,7 @@ export const ItemContainer = styled.div`
   width: 300px;
   height: 300px;
   text-align: center;
-  box-shadow: ${ ({ theme: { gradients } }) => gradients.itemshadow } };
+  box-shadow: ${ ({ theme: { gradients } }) => gradients.itemshadow };
   background-image: url(${ ({ image }) => image });
   background-position: 50% 25%;
   background-size: 50%;
@@ -47,7 +46,7 @@ export const ItemContainer = styled.div`
   background-color: ${ ({ theme: { colors } }) => colors.white };
   padding: 10px;
   margin: 15px;
-  border-radius: 0px;
+  border-radius: 0;
   display: inline-block;
   position: relative;
   
@@ -59,7 +58,7 @@ export const ItemContainer = styled.div`
     top: 0; 
     left: 0;
     background: ${ ({ theme: { colors } }) => colors.current };
-    border-radius: 0px;
+    border-radius: 0;
     opacity: 0;
     z-index: 1;
     
@@ -98,10 +97,10 @@ export const BlogItemTextContainer = styled.div`
 export const BlogItemContainer = styled.div`
   width: 300px;
   text-align: center;
-  box-shadow: ${ ({ theme: { gradients } }) => gradients.itemshadow } };
+  box-shadow: ${ ({ theme: { gradients } }) => gradients.itemshadow };
   background-color: ${ ({ theme: { colors } }) => colors.white };
   margin: 15px;
-  border-radius: 0px;
+  border-radius: 0;
   display: inline-block;
   vertical-align: top;
   position: relative;
@@ -114,9 +113,9 @@ export const BlogItemContainer = styled.div`
   ${BlogItemTextContainer}::after {
     content: "";
     position: absolute;
-    left: 0%;
-    top: 0px;
-    height: 0px;
+    left: 0;
+    top: 0;
+    height: 0;
     width: 100%;
     border-bottom: 3px solid ${ ({ theme: { colors } }) => colors.current };
     transition: 0.3s all;
@@ -125,7 +124,7 @@ export const BlogItemContainer = styled.div`
   &:hover {
     ${BlogItemTextContainer}::after {
       left: 50%;
-      width: 0%;
+      width: 0;
       transition: 0.3s all;
     }
   }
