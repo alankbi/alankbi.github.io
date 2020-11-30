@@ -43,7 +43,7 @@ const StyledContent = styled.div`
     width: 100%;
     top: 0;
     left: 0;
-    margin-bottom: 120px;
+    padding-bottom: 100px;
   }
   
   @media (max-width: 500px) {
