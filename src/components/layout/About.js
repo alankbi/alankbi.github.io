@@ -36,9 +36,9 @@ function About() {
                 <UnderlinedLink to={"/projects/hackduke"}>social good.</UnderlinedLink>
               </NormalText>
 
-              <NormalText>In the past, I interned at <UnderlinedLink to={"/"}>Fidelity</UnderlinedLink> (2020),{' '} 
-                <UnderlinedLink to={"/projects/expedia"}>Expedia</UnderlinedLink> (2018),
-                and <UnderlinedLink to={"/projects/uw-2019"}>UW CSE</UnderlinedLink> (2019) doing software development
+              <NormalText>Over the past few summers, I interned at <UnderlinedLink to={"/"}>Fidelity</UnderlinedLink> ('20),{' '} 
+                <UnderlinedLink to={"/projects/expedia"}>Expedia</UnderlinedLink> ('18),
+                and <UnderlinedLink to={"/projects/uw-2019"}>UW CSE</UnderlinedLink> ('19, '17) doing software development
                 and CS research. In my free time, I enjoy playing table tennis and watching random clips
                 on YouTube.
               </NormalText>
