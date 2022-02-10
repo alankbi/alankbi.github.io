@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components'
-import { GrayText } from './Text';
 import Social from './Social';
 import { UnstyledLink } from './Link';
 
@@ -31,12 +30,6 @@ const ColorButton = styled.button`
   }
 `;
 
-const ColorChangeText = styled(GrayText)`
-  display: inline;
-  margin-right: 8px;
-  margin-left: 10px;
-`;
-
 const SocialFooter = styled.div`
   position: absolute;
   right: 20px;
@@ -59,7 +52,6 @@ const SocialFooter = styled.div`
 function NavBar(props) {
   return (
     <BottomPosition className="footer">
-      {/*<ColorChangeText>Theme: </ColorChangeText>*/}
       <ColorButton onClick={props.colorChange} />
 
       <SocialFooter><Social/></SocialFooter>
