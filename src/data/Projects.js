@@ -1,4 +1,12 @@
 export default {
+  meta: {
+    title: 'Meta',
+    description: 'SWE intern within Facebook AI working on vision-related content matching. ',
+    // longdescription: 'TODO',
+    image: '/assets/images/project/meta.png',
+    link: 'https://meta.com/',
+    tags: ['work', 'intern', 'python', 'machine-learning'],
+  },
   microsoft: {
     title: 'Microsoft',
     description: 'SWE intern on the Intune UX team developing device barcode scanning functionality. ',
