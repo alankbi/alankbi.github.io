@@ -2,9 +2,12 @@ export default {
   meta: {
     title: 'Meta',
     description: 'SWE intern within Facebook AI working on vision-related content matching. ',
-    // longdescription: 'TODO',
+    longdescription: 'The summer of 2022, I interned at Meta on the AI integrity team (under the ' +
+        'Applied AI Research org) working on Facebook\'s copy detection model. During this time, I ' +
+        'built a new training and inference architecture for the model using PyTorch Lightning in ' +
+        'order to greatly increase model flexibility going forward.',
     image: '/assets/images/project/meta.png',
-    link: 'https://meta.com/',
+    link: 'https://ai.facebook.com/',
     tags: ['work', 'intern', 'python', 'machine-learning'],
   },
   microsoft: {

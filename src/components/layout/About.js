@@ -30,7 +30,7 @@ function About() {
           <Column style={{padding: "0px 40px"}}>
             <LeftAlignedContainer>
               <TitleText>About Me</TitleText>
-              <NormalText>Hello! I’m a senior at Duke University studying computer science and statistics.
+              <NormalText>I’m a senior at Duke University studying computer science and statistics.
                 My passion for tech ranges from <UnderlinedLink to={"/projects/codejoust"}>web dev</UnderlinedLink> to&nbsp;
                 <UnderlinedLink to={"/projects/detecto"}>machine learning</UnderlinedLink> to&nbsp;
                 <UnderlinedLink to={"/projects/hackduke"}>social good.</UnderlinedLink>

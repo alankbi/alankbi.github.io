@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
-import { HeaderText, NormalTextInline, TitleText, BlogPostTitleText, SmallText } from '../view/Text';
+import ReactMarkdown from 'react-markdown';
+import { withRouter } from 'react-router-dom';
+import { withTheme } from 'styled-components';
+import { HeaderText, NormalTextInline, TitleText, BlogPostTitleText, SmallText, PhotographyText } from '../view/Text';
 import { BlogPageContainer, CenteredContainer, HeaderContainer, LeftAlignedContainer } from '../view/Container';
 import { BlogImage } from '../view/Image';
 import NotFound from './NotFound'
-import { withTheme } from 'styled-components';
-import { withRouter} from 'react-router-dom';
 import BlogPosts from '../../data/BlogPosts';
-import ReactMarkdown from 'react-markdown';
 import { UnderlinedExternalLink } from '../view/Link';
 
-class ProjectPage extends Component {
+class BlogPage extends Component {
   constructor(props) {
     super(props);
 
@@ -55,7 +55,7 @@ class ProjectPage extends Component {
       escapeHtml: false,
       linkTarget: '_blank',
       renderers: {
-        text: NormalTextInline,
+        text: !blog.photography ? NormalTextInline : PhotographyText,
         link: UnderlinedExternalLink,
         image: BlogImage,
         heading: BlogPostTitleText,
@@ -64,18 +64,20 @@ class ProjectPage extends Component {
 
     return (
       <BlogPageContainer className="blog-post-page">
-        <HeaderContainer margin={"50px"}>
-          <HeaderText>{blog.title}</HeaderText>
+        <HeaderContainer margin={!blog.photography ? "50px" : "10px"}>
+          <HeaderText>{!blog.photography ? blog.title : blog.photoTitle}</HeaderText>
         </HeaderContainer>
 
         <CenteredContainer>
-          <SmallText>Published {blog.date} &nbsp;|&nbsp;&nbsp;Read on&nbsp;
-            <UnderlinedExternalLink target={"_blank"} href={"https://medium.com/@alankbi"}>
-              Medium
-            </UnderlinedExternalLink>
-          </SmallText>
+          {!blog.photography ? (
+            <SmallText>Published {blog.date} &nbsp;|&nbsp;&nbsp;Read on&nbsp;
+              <UnderlinedExternalLink target={"_blank"} href={"https://medium.com/@alankbi"}>
+                Medium
+              </UnderlinedExternalLink>
+            </SmallText>
+          ) : <SmallText style={{marginBottom: "100px"}}>Published {blog.date}</SmallText>}
 
-          <BlogImage src={blog.image} alt={blog.title} style={{marginBottom: "60px", marginTop: "10px"}} />
+          {!blog.photography && <BlogImage src={blog.image} alt={blog.title} style={{marginBottom: "60px", marginTop: "10px"}} />}
 
           <LeftAlignedContainer className="blog-content">
             <ReactMarkdown source={this.state.markdown} {...options} />
@@ -86,4 +88,4 @@ class ProjectPage extends Component {
   }
 }
 
-export default withRouter(withTheme(ProjectPage));
+export default withRouter(withTheme(BlogPage));

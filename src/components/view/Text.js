@@ -73,3 +73,10 @@ export const BlogPostTitleText = styled.h2`
     font-weight: bold;
   }
 `;
+
+export const PhotographyText = styled(NormalText)`
+  margin: 0 auto;
+  text-align: center;
+  width: 75%;
+  line-height: 1.4;
+`;
