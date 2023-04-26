@@ -70,12 +70,12 @@ export default {
     date: 'May 3, 2019',
     markdown: '/posts/2019-04-20-what-i-learned-at-def-hacks.md',
   },
-  'https://teamscode.com/blog/teamscode-internal-resources/': {
+  'https://teamscode.org/blog/internal-resources/': {
     title: 'TeamsCode\'s internal resources',
     image: '/assets/images/blog-images/2019/internal_resources.png',
     date: 'April 12, 2019',
   },
-  'https://teamscode.com/blog/analyzing-registration-data/': {
+  'https://teamscode.org/blog/analyzing-registration-data/': {
     title: 'Analyzing registration data from TeamsCode\'s programming contests',
     image: '/assets/images/blog-images/2019/analyzing_registration.png',
     date: 'March 23, 2019',
