@@ -1,11 +1,11 @@
 export default {
   '2023-04-26/photography-natural-unnatural': {
-    title: 'Photography: The Natural and the Unnatural',
+    title: 'Photo Series: Humans and Nature',
     image: '/assets/images/blog-images/2023/nature/thumbnail.JPG',
     date: 'April 26, 2023',
-    markdown: '/posts/2023-04-26-photography-natural-unnatural.md',
+    markdown: '/posts/2023-04-26-photography-humans-nature.md',
     photography: true,
-    photoTitle: "Natural vs. Unnatural"
+    photoTitle: "Humans and Nature"
   },
   'https://medium.com/pytorch/detecto-build-and-train-object-detection-models-with-pytorch-5f31b68a8109': {
     title: 'Detecto - An object detection library for PyTorch',

@@ -2,7 +2,15 @@ import React, { Component } from 'react';
 import ReactMarkdown from 'react-markdown';
 import { withRouter } from 'react-router-dom';
 import { withTheme } from 'styled-components';
-import { HeaderText, NormalTextInline, TitleText, BlogPostTitleText, SmallText, PhotographyText } from '../view/Text';
+import {
+  HeaderText,
+  NormalTextInline,
+  TitleText,
+  BlogPostTitleText,
+  SmallText,
+  PhotographyText,
+  NormalText
+} from '../view/Text';
 import { BlogPageContainer, CenteredContainer, HeaderContainer, LeftAlignedContainer } from '../view/Container';
 import { BlogImage } from '../view/Image';
 import NotFound from './NotFound'
@@ -75,7 +83,7 @@ class BlogPage extends Component {
                 Medium
               </UnderlinedExternalLink>
             </SmallText>
-          ) : <SmallText style={{marginBottom: "100px"}}>Published {blog.date}</SmallText>}
+          ) : <NormalText style={{marginBottom: "100px"}}>{blog.date}</NormalText>}
 
           {!blog.photography && <BlogImage src={blog.image} alt={blog.title} style={{marginBottom: "60px", marginTop: "10px"}} />}
 
