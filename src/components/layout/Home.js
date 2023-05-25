@@ -12,7 +12,7 @@ function Home(props) {
 
       <HeaderContainer>
         <HeaderText color={props.theme.colors.current}>Hi, I'm Alan.</HeaderText>
-        <NormalText>I'm a senior at Duke University studying computer science and statistics.</NormalText>
+        <NormalText>I'm a recent Duke University graduate in computer science and statistics.</NormalText>
       </HeaderContainer>
 
       <CenteredContainer>

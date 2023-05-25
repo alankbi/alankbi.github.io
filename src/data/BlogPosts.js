@@ -1,5 +1,5 @@
 export default {
-  '2023-04-26/photography-natural-unnatural': {
+  '2023-04-26/photography-humans-nature': {
     title: 'Photo Series: Humans and Nature',
     image: '/assets/images/blog-images/2023/nature/thumbnail.JPG',
     date: 'April 26, 2023',
