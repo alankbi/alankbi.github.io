@@ -16,7 +16,7 @@ class App extends Component {
     super(props);
 
     this.state = {
-      colors: ['blue', 'green', 'red', 'yellow'],
+      colors: ['blue', 'green'],
       colorIndex: 0,
     };
 

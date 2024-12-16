@@ -1,6 +1,6 @@
 import React from 'react';
 import { HeaderText } from '../view/Text';
-import { HeaderContainer, CenteredContainer } from '../view/Container';
+import { HeaderContainer, CenteredContainer, BasePageContainer } from '../view/Container';
 import { withTheme } from 'styled-components'
 import BlogPosts from '../../data/BlogPosts';
 import BlogItem from '../view/BlogItem';
@@ -8,7 +8,7 @@ import BlogItem from '../view/BlogItem';
 
 function Blog(props) {
   return (
-    <div className="blog-page">
+    <BasePageContainer className="blog-page">
       <HeaderContainer>
         <HeaderText color={props.theme.colors.current}>Blog</HeaderText>
       </HeaderContainer>
@@ -16,7 +16,7 @@ function Blog(props) {
       <CenteredContainer>
         {Object.keys(BlogPosts).map((blog) => <BlogItem key={blog} blog={blog} />)}
       </CenteredContainer>
-    </div>
+    </BasePageContainer>
   );
 }
 

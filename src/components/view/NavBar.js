@@ -40,8 +40,8 @@ const NavBar = withRouter(function (props) {
   return (
     <Absolute className="navbar">
       <nav>
-        <LeftHeader to="/blog" active={url.startsWith("/blog") ? 1 : undefined}>
-          Blog
+        <LeftHeader to="/photos" active={url.startsWith("/photos") ? 1 : undefined}>
+          Photos
         </LeftHeader>
         <RightHeader to="/about" active={url.startsWith("/about") ? 1 : undefined}>
           About

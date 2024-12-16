@@ -1,5 +1,5 @@
 import React from 'react';
-import { CenteredContainer, HeaderContainer, LeftAlignedContainer } from '../view/Container';
+import { BasePageContainer, CenteredContainer, HeaderContainer, LeftAlignedContainer } from '../view/Container';
 import { HeaderText, NormalText, TitleText } from '../view/Text';
 import { Column, Row } from '../view/Grid';
 import { SquareImage } from '../view/Image';
@@ -16,7 +16,7 @@ const SocialButtons = styled.div`
 
 function About() {
   return (
-    <div className="about-page">
+    <BasePageContainer className="about-page">
       <HeaderContainer margin={'40px'}>
         <HeaderText>Hi, I'm Alan.</HeaderText>
       </HeaderContainer>
@@ -50,7 +50,7 @@ function About() {
           </Column>
         </Row>
       </CenteredContainer>
-    </div>
+    </BasePageContainer>
   );
 }
 

@@ -1,6 +1,11 @@
 import styled from 'styled-components'
 
 
+export const BasePageContainer = styled.div`
+  margin-top: 80px;
+  padding-bottom: 100px;
+`;
+
 export const CenteredContainer = styled.div`
   text-align: center;
 `;
@@ -33,14 +38,25 @@ export const ItemDescription = styled.div`
   display: none;
 `;
 
-export const ItemContainer = styled.div`
-  width: 300px;
-  height: 300px;
+export const PhotoItemDescription = styled.div`
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  top: 0;
+  bottom: 3%;
+  margin: auto;
+  height: 100px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+`;
+
+const BaseItemContainer = styled.div`
   text-align: center;
   box-shadow: ${ ({ theme: { gradients } }) => gradients.itemshadow };
   background-image: url(${ ({ image }) => image });
-  background-position: 50% 25%;
-  background-size: 50%;
   background-repeat: no-repeat;
   background-color: ${ ({ theme: { colors } }) => colors.white };
   padding: 10px;
@@ -71,7 +87,14 @@ export const ItemContainer = styled.div`
     
     transition: 0.3s all;
   }
-  
+`;
+
+export const ItemContainer = styled(BaseItemContainer)`
+  width: 300px;
+  height: 300px;
+  background-position: 50% 25%;
+  background-size: 50%;
+
   &:hover ${ItemDescription} {
     display: inline;
     z-index: 2;
@@ -84,6 +107,40 @@ export const ItemContainer = styled.div`
   @media (max-width: 500px) {
     width: 250px;
     height: 250px;
+  }
+`;
+
+export const PhotoItemContainer = styled(BaseItemContainer)`
+  width: 800px;
+  height: 640px;
+  background-position: 50% 25%;
+  background-size: 100%;
+  padding: 0;
+
+  &:hover ${PhotoItemDescription} {
+    opacity: 1;
+    z-index: 2;
+    transition: 0.3s all;
+  }
+  
+  @media (max-width: 1200px) and (min-width: 900px) {
+    width: 600px;
+    height: 480px;
+  }
+  
+  @media (max-width: 899px) and (min-width: 750px) {
+    width: 450px;
+    height: 360px;
+  }
+  
+  @media (max-width: 749px) and (min-width: 600px) {
+    width: 350px;
+    height: 280px;
+  }
+  
+  @media (max-width: 599px) {
+    width: 250px;
+    height: 200px;
   }
 `;
 
@@ -134,6 +191,45 @@ export const BlogItemContainer = styled.div`
 `;
 
 export const BlogPageContainer = styled.div`
-  margin: 0 auto;
+  margin: 80px auto;
   width: 75%;
+  padding-bottom: 100px;
 `;
+
+export const PhotoCollectionsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+`;
+
+export const PhotoContentContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  //max-width: 80%;
+  //max-height: 50%;
+  text-align: center;
+  flex-grow: 1;
+`;
+
+export const PhotoContentControlsContainer = styled.div`
+  position: fixed;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  z-index: 10;
+  background: ${ ({ theme: { colors } }) => colors.background };
+  border-radius: 4px;
+  padding: 4px;
+`

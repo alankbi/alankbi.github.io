@@ -4,14 +4,12 @@ import { ThemeProvider } from 'styled-components';
 export const ThemeConfig = {
   colors: {
     text: '#444',
-    blue: '#3E93CD',
-    green: '#39B54A',
-    yellow: '#FCAD21',
-    red: '#D74724',
+    blue: '#465a7a',
+    green: '#42593d',
     white: 'white',
     gray: 'gray',
     background: '#FCFCFC',
-    current: '#3E93CD',
+    current: '#465a7a',
   },
   gradients: {
     itemshadow: '0 1px 30px rgba(0, 0, 0, 0.12)',

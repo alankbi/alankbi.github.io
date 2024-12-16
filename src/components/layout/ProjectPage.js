@@ -1,7 +1,7 @@
 import React from 'react';
 import { HeaderText, NormalText, TitleText } from '../view/Text';
 import { ProjectLink } from '../view/Link';
-import { CenteredContainer, HeaderContainer, LeftAlignedContainer } from '../view/Container';
+import { BasePageContainer, CenteredContainer, HeaderContainer, LeftAlignedContainer } from '../view/Container';
 import { Row, Column } from '../view/Grid';
 import { SquareImage } from '../view/Image';
 import Projects from '../../data/Projects';
@@ -22,7 +22,7 @@ function ProjectPage(props) {
   }
 
   return (
-    <div className="project-page">
+    <BasePageContainer className="project-page">
       <HeaderContainer margin={"55px"}>
         <ProjectLink href={project.link} target={"_blank"}>
           <HeaderText color={props.theme.colors.current}>{project.title}</HeaderText>
@@ -51,7 +51,7 @@ function ProjectPage(props) {
           </Column>
         </Row>
       </CenteredContainer>
-    </div>
+    </BasePageContainer>
   );
 }
 

@@ -30,3 +30,9 @@ export const BlogItemImage = styled.img`
   width: 100%;
   display: block;
 `;
+
+export const CollectionImage = styled.img`
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+`;

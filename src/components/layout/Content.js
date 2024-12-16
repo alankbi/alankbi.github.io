@@ -1,17 +1,19 @@
 import React from 'react';
+import { Route, Switch, withRouter } from 'react-router-dom';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import Home from './Home';
 import Blog from './Blog';
+import Photos from './Photos';
 import About from './About';
 import ProjectPage from './ProjectPage';
 import NotFound from './NotFound';
 import styled from 'styled-components';
-import { Route, Switch, withRouter } from 'react-router-dom';
 import BlogPage from './BlogPage';
+import PhotosPage from './PhotosPage';
 
 
 const StyledContent = styled.div`
-  margin: 160px auto;
+  margin: 80px auto;
   width: 80%;
   justify-content: center;
   
@@ -43,7 +45,6 @@ const StyledContent = styled.div`
     width: 100%;
     top: 0;
     left: 0;
-    padding-bottom: 100px;
   }
   
   @media (max-width: 500px) {
@@ -64,8 +65,10 @@ function Content({ location }) {
             <Switch location={location}>
               <Route exact path="/" component={Home} />
               <Route exact path="/blog" component={Blog} />
+              <Route exact path="/photos" component={Photos} />
               <Route exact path="/about" component={About} />
               <Route path="/projects/:project" component={ProjectPage} />
+              <Route path="/photos/:collectionUrl+" component={PhotosPage} />
               <Route path="/blog/:blog+" component={BlogPage} />
               <Route component={NotFound} />
             </Switch>

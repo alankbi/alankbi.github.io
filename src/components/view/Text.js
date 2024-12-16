@@ -31,7 +31,12 @@ export const NormalTextInline = styled(NormalText)`
 `;
 
 export const GrayText = styled.p`
+  margin: 0;
   color: ${ ({ theme: { colors } }) => colors.gray };
+  font-size: ${ ({ theme: { fontSizes } }) => fontSizes.normal };
+`;
+
+export const SmallGrayText = styled(GrayText)`
   font-size: ${ ({ theme: { fontSizes } }) => fontSizes.small };
 `;
 
@@ -50,6 +55,22 @@ export const ItemDescriptionText = styled.p`
   color: ${ ({ theme: { colors } }) => colors.white };
   text-align: center;
   font-size: ${ ({ theme: { fontSizes } }) => fontSizes.itemdesc };
+`;
+
+export const PhotoItemHoverText = styled.p`
+  color: ${ ({ theme: { colors } }) => colors.white };
+  text-align: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: ${ ({ theme: { fontSizes } }) => fontSizes.header };
+  
+  @media (max-width: 900px) and (min-width: 600px) {
+    font-size: ${ ({ theme: { fontSizes } }) => fontSizes.headermobile };
+  }
+  
+  @media (max-width: 599px) {
+    font-size: ${ ({ theme: { fontSizes } }) => fontSizes.itemtitlemobile };
+  }
 `;
 
 export const TitleText = styled.h2`
