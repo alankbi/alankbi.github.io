@@ -2,7 +2,11 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import {GrayText, HeaderText, SmallGrayText} from '../view/Text';
 import {
-  CenteredContainer, PhotoCollectionsContainer, PhotoContentContainer, PhotoContentControlsContainer
+  CenteredContainer,
+  PhotoCollectionsContainer,
+  PhotoCollectionsFlexContainer,
+  PhotoContentContainer,
+  PhotoContentControlsContainer
 } from '../view/Container';
 import { CollectionImage } from '../view/Image';
 import NotFound from './NotFound'
@@ -90,13 +94,15 @@ function PhotosPage() {
 
   return (
     <PhotoCollectionsContainer>
-      <PhotoContentContainer>
-        {getCachedContent(pageNumber)}
-      </PhotoContentContainer>
-      <PhotoContentControlsContainer>
-        <SmallGrayText>Page {pageNumber + 1} of {numPages}</SmallGrayText>
-        <SmallGrayTextButton onClick={() => setPageNumber(0)}>(to top)</SmallGrayTextButton>
-      </PhotoContentControlsContainer>
+      <PhotoCollectionsFlexContainer>
+        <PhotoContentContainer>
+          {getCachedContent(pageNumber)}
+        </PhotoContentContainer>
+        <PhotoContentControlsContainer>
+          <SmallGrayText>Page {pageNumber + 1} of {numPages}</SmallGrayText>
+          <SmallGrayTextButton onClick={() => setPageNumber(0)}>(to top)</SmallGrayTextButton>
+        </PhotoContentControlsContainer>
+      </PhotoCollectionsFlexContainer>
     </PhotoCollectionsContainer>
   );
 }

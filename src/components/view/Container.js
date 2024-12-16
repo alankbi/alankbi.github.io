@@ -197,9 +197,18 @@ export const BlogPageContainer = styled.div`
 `;
 
 export const PhotoCollectionsContainer = styled.div`
+  position: fixed;
+  top: 80px;
+  bottom: 80px;
+  left: 0;
+  right: 0;
+  z-index: 10
+`;
+
+export const PhotoCollectionsFlexContainer = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-grow: 1;
   width: 100%;
@@ -212,15 +221,15 @@ export const PhotoContentContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  //max-width: 80%;
-  //max-height: 50%;
+  max-width: 80%;
+  max-height: 80%;
   text-align: center;
   flex-grow: 1;
 `;
 
 export const PhotoContentControlsContainer = styled.div`
   position: fixed;
-  bottom: 5px;
+  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
