@@ -108,7 +108,7 @@ function PhotosPage() {
     const metadataText = getMetadataStringFromExif(exifData);
     const content = (
       <AbsoluteFlexContainer>
-        <CollectionImage src={imageUrl} />
+        <CollectionImage src={imageUrl} onClick={() => window.open(imageUrl)} />
         {metadataText ? <PhotoMetadataText>{metadataText}</PhotoMetadataText> : null}
       </AbsoluteFlexContainer>
     );
