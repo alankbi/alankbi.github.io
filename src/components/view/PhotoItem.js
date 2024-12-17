@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { UnstyledLink } from './Link';
-import { PhotoItemHoverText } from './Text';
+import { PhotoItemHoverText, PhotoItemSubtitleHoverText } from './Text';
 import { PhotoItemContainer, PhotoItemDescription } from './Container'
 import PhotoCollections from '../../data/PhotoCollections';
 import { getFullUrlForHeaderImage } from '../../util/PhotoActions';
@@ -17,6 +17,7 @@ function PhotoItem(props) {
       <PhotoItemContainer image={headerImagePath}>
         <PhotoItemDescription>
           <PhotoItemHoverText>{collection.title}</PhotoItemHoverText>
+          <PhotoItemSubtitleHoverText>{collection.subtitle}</PhotoItemSubtitleHoverText>
         </PhotoItemDescription>
       </PhotoItemContainer>
     </UnstyledLink>

@@ -57,11 +57,16 @@ export const ItemDescriptionText = styled.p`
   font-size: ${ ({ theme: { fontSizes } }) => fontSizes.itemdesc };
 `;
 
-export const PhotoItemHoverText = styled.p`
+const PhotoItemBaseHoverText = styled.p`
+  display: block;
   color: ${ ({ theme: { colors } }) => colors.white };
   text-align: center;
   justify-content: center;
   font-weight: bold;
+  margin: 5px;
+`;
+
+export const PhotoItemHoverText = styled(PhotoItemBaseHoverText)`
   font-size: ${ ({ theme: { fontSizes } }) => fontSizes.header };
   
   @media (max-width: 900px) and (min-width: 600px) {
@@ -71,6 +76,12 @@ export const PhotoItemHoverText = styled.p`
   @media (max-width: 599px) {
     font-size: ${ ({ theme: { fontSizes } }) => fontSizes.itemtitlemobile };
   }
+`;
+
+export const PhotoItemSubtitleHoverText = styled(PhotoItemBaseHoverText)`
+  font-size: ${ ({ theme: { fontSizes } }) => fontSizes.normal };
+  font-weight: normal;
+  font-style: italic;
 `;
 
 export const TitleText = styled.h2`
@@ -100,4 +111,15 @@ export const PhotographyText = styled(NormalText)`
   text-align: center;
   width: 75%;
   line-height: 1.4;
+`;
+
+export const PhotoMetadataText = styled.pre`
+  font-family: ${ ({ theme }) => theme.font };
+  color: ${ ({ theme: { colors } }) => colors.lightgray };
+  font-size: ${ ({ theme: { fontSizes } }) => fontSizes.small };
+  margin: 5px;
+  
+  @media (max-width: 950px) {
+    font-size: ${ ({ theme: { fontSizes } }) => fontSizes.extrasmall };
+  }
 `;

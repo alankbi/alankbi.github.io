@@ -10,7 +10,7 @@ function Photos(props) {
   return (
     <BasePageContainer className="photo-page">
       <HeaderContainer>
-        <HeaderText color={props.theme.colors.current}>Photos</HeaderText>
+        <HeaderText color={props.theme.colors.current}>Photo Collections</HeaderText>
       </HeaderContainer>
 
       <CenteredContainer>

@@ -18,6 +18,19 @@ export const LeftAlignedContainer = styled.div`
   text-align: left;
 `;
 
+export const AbsoluteFlexContainer = styled.div`
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+ 
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+`;
+
 export const ItemBottomTitle = styled.div`
   position: absolute;
   bottom: 25px;
@@ -47,6 +60,7 @@ export const PhotoItemDescription = styled.div`
   margin: auto;
   height: 100px;
   display: flex;
+  flex-direction: column;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -116,6 +130,8 @@ export const PhotoItemContainer = styled(BaseItemContainer)`
   background-position: 50% 25%;
   background-size: 100%;
   padding: 0;
+  margin-bottom: 40px;
+  box-shadow: ${ ({ theme: { gradients } }) => gradients.largeitemshadow };
 
   &:hover ${PhotoItemDescription} {
     opacity: 1;
@@ -198,33 +214,31 @@ export const BlogPageContainer = styled.div`
 
 export const PhotoCollectionsContainer = styled.div`
   position: fixed;
-  top: 80px;
-  bottom: 80px;
-  left: 0;
-  right: 0;
+  top: 10%;
+  bottom: 10%;
+  left: 10%;
+  right: 10%;
   z-index: 10
 `;
 
-export const PhotoCollectionsFlexContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
-`;
-
-export const PhotoContentContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  max-width: 80%;
-  max-height: 80%;
-  text-align: center;
-  flex-grow: 1;
+export const PhotoTransitionStylesContainer = styled.div`
+  .photo-fade-enter {
+    opacity: 0.01;
+  }
+  
+  .photo-fade-enter.photo-fade-enter-active {
+    opacity: 1;
+    transition: opacity 0.2s ease-in;
+    transition-delay: 0.2s;
+  }
+  
+  .photo-fade-exit {
+    opacity: 1;
+  }
+    
+  .photo-fade-exit.photo-fade-exit-active {
+    opacity: 0.01;
+    transition: opacity 0.2s ease-in;
 `;
 
 export const PhotoContentControlsContainer = styled.div`

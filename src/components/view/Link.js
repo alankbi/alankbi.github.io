@@ -52,5 +52,6 @@ export const ProjectLink = styled(UnderlinedLink).attrs({ as: 'a'})`
 
 export const UnstyledLink = styled.a`
   text-decoration: none;
-  color: ${ ({ theme: { colors } }) => colors.gray }
+  color: ${ ({ color, theme: { colors } }) => color ? color : colors.text };
+
 `;
