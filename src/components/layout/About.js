@@ -36,12 +36,9 @@ function About() {
                 <UnderlinedLink to={"/projects/hackduke"}>social good.</UnderlinedLink>
               </NormalText>
 
-              <NormalText>Over the past few summers, I interned at{' '}
-                <UnderlinedLink to={"/projects/meta"}>Meta</UnderlinedLink> ('22),{' '}
-                <UnderlinedLink to={"/projects/microsoft"}>Microsoft</UnderlinedLink> ('21),{' '}
-                and <UnderlinedLink to={"/projects/fidelity"}>Fidelity</UnderlinedLink> ('20) doing software
-                development. In my free time, I enjoy playing table tennis, watching sports, and hanging out with
-                friends.
+              <NormalText>Currently, I am a software engineer at{' '}
+                <UnderlinedLink to={"/projects/optiver"}>Optiver</UnderlinedLink> living in Chicago. In my free
+                time, I enjoy playing ping pong, watching sports, taking photos, and hanging out with friends.
               </NormalText>
 
               <TitleText>Contact</TitleText>

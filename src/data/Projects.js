@@ -1,4 +1,13 @@
 export default {
+  optiver: {
+    title: 'Optiver',
+    description: 'Software engineer at Optiver working on trading systems in C# and Python.',
+    longdescription: 'Software engineer at Optiver working on trading systems in C# and Python. ' +
+      'Began in August 2023 as a campus new hire.',
+    image: '/assets/images/project/optiver.png',
+    link: 'https://optiver.com/',
+    tags: ['work', 'swe', 'c#', 'python'],
+  },
   meta: {
     title: 'Meta',
     description: 'SWE intern within Facebook AI working on vision-related content matching. ',
