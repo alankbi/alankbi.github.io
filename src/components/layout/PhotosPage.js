@@ -63,13 +63,31 @@ function PhotosPage() {
         safeSetPageNumber(pageNumber - 1);
       }
     };
+    const handleTouchStart = (e) => {
+      const targetItem = e.target.tagName.toLowerCase();
+      if (['a', 'button', 'img', 'svg'].includes(targetItem)) {
+        return;
+      }
+
+      if (e.changedTouches[0].screenY < window.innerHeight / 2) {
+        safeSetPageNumber(pageNumber - 1);
+      } else {
+        safeSetPageNumber(pageNumber + 1);
+      }
+
+      e.stopImmediatePropagation();
+      e.preventDefault();
+      return false;
+    };
 
     window.addEventListener('wheel', handleScroll);
     window.addEventListener('keydown', handleKeyDown);
+    window.addEventListener('touchstart', handleTouchStart)
 
     return () => {
       window.removeEventListener('wheel', handleScroll);
       window.removeEventListener('keydown', handleKeyDown);
+      window.removeEventListener('touchstart', handleTouchStart)
     };
   }, [pageNumber, canScroll]);
 
@@ -119,6 +137,7 @@ function PhotosPage() {
     fetchContent(pageNumber);
     fetchContent(pageNumber + 1);
     fetchContent(pageNumber + 2);
+    fetchContent(pageNumber + 3);
   }, [pageNumber]);
 
   let collection = null;
