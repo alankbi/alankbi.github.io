@@ -4,9 +4,9 @@ export default {
     subtitle: 'Visiting China for the first time in 15+ years.',
     imageFolder: '202505_china',
     content: [
-      'DSCF9488.jpg',
-      'IMG_9705.jpg',
       'IMG_9707.jpg',
+      'IMG_9705.jpg',
+      'DSCF9488.jpg',
       'DSCF9709.jpg',
       'DSCF9732.jpg',
       'DSCF9631.jpg',
