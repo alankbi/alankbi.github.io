@@ -1,4 +1,12 @@
 export default {
+  '2026-10/misc': {
+    title: 'Misc',
+    subtitle: 'A test upload from the new Mac.',
+    imageFolder: '202610_misc',
+    content: [
+      'DSCF0113.JPG',
+    ]
+  },
   '2025-05/china': {
     title: 'China',
     subtitle: 'Visiting China for the first time in 15+ years.',
