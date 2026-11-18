@@ -17,12 +17,14 @@ const Absolute = styled.div`
 const LeftHeader = styled(NavbarLink)`
   float: left;
   margin-left: 50px;
+  @media (max-width: 600px) { margin-left: 12px; }
   font-size: ${ ({ theme: { fontSizes } }) => fontSizes.navbar };
 `;
 
 const RightHeader = styled(NavbarLink)`
   float: right;
   margin-right: 50px;
+  @media (max-width: 600px) { margin-right: 12px; }
   font-size: ${ ({ theme: { fontSizes } }) => fontSizes.navbar };
 `;
 

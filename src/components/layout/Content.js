@@ -18,24 +18,28 @@ const StyledContent = styled.div`
   justify-content: center;
   
   .fade-enter {
-    opacity: 0.01;
+    opacity: 0;
   }
   
   .fade-enter.fade-enter-active {
     opacity: 1;
-    transition: opacity 0.2s ease-in;
-    transition-delay: 0.2s;
+    transition: opacity 280ms ease;
   }
   
   .fade-exit {
+    pointer-events: none;
     opacity: 1;
   }
     
   .fade-exit.fade-exit-active {
-    opacity: 0.01;
-    transition: opacity 0.2s ease-in;
+    opacity: 0;
+    transition: opacity 280ms ease;
   }
   
+  @media (prefers-reduced-motion: reduce) {
+    .fade-enter.fade-enter-active, .fade-exit.fade-exit-active { transition: none; }
+  }
+
   div.transition-group {
     position: relative;
   }
@@ -57,8 +61,8 @@ function Content({ location }) {
     <StyledContent>
       <TransitionGroup className={"transition-group"}>
         <CSSTransition
-          key={location.key}
-          timeout={{ enter: 400, exit: 200 }}
+          key={location.pathname}
+          timeout={280}
           classNames={"fade"} >
 
           <section className={"route-section"}>

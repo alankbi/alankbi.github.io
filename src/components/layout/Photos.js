@@ -1,23 +1,17 @@
-import React from 'react';
-import { HeaderText } from '../view/Text';
-import { HeaderContainer, CenteredContainer, BasePageContainer } from '../view/Container';
-import { withTheme } from 'styled-components'
+import React, { useEffect } from 'react';
 import PhotoItem from '../view/PhotoItem';
 import PhotoCollections from '../../data/PhotoCollections';
+import Masonry from '../photos/Masonry';
+import { PhotoShell } from '../photos/PhotoStyles';
 
-
-function Photos(props) {
+export default function Photos() {
+  useEffect(() => { window.scrollTo(0, 0); }, []);
   return (
-    <BasePageContainer className="photo-page">
-      <HeaderContainer>
-        <HeaderText color={props.theme.colors.current}>Photo Collections</HeaderText>
-      </HeaderContainer>
-
-      <CenteredContainer>
-        {Object.keys(PhotoCollections).map((collectionUrl) => <PhotoItem key={collectionUrl} collectionUrl={collectionUrl} />)}
-      </CenteredContainer>
-    </BasePageContainer>
+    <PhotoShell>
+      <Masonry collections>
+        {Object.keys(PhotoCollections).map((collectionUrl, index) =>
+          <PhotoItem key={collectionUrl} collectionUrl={collectionUrl} index={index} />)}
+      </Masonry>
+    </PhotoShell>
   );
 }
-
-export default withTheme(Photos);

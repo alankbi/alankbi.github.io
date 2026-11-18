@@ -18,7 +18,7 @@ export const ThemeConfig = {
     itemshadowhover: '0 1px 40px rgba(0, 0, 0, 0.24)',
     colorshadow: '0 0px 8px rgba(0, 0, 0, 0.16)',
   },
-  font: 'Lato',
+  font: '"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
   fontSizes: {
     extrasmall: '12px',
     small: '15px',
