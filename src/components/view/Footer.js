@@ -12,6 +12,15 @@ const BottomPosition = styled.div`
   bottom: 0;
   height: 30px;
   padding: 5px;
+
+  @media (max-width: 600px) {
+    position: relative;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    justify-content: space-between;
+    height: auto;
+    padding: 12px 5% calc(12px + env(safe-area-inset-bottom, 0px));
+  }
 `;
 
 const ColorButton = styled.button`
@@ -24,6 +33,8 @@ const ColorButton = styled.button`
   border-radius: 10px;
   
   margin-left: 10px;
+
+  @media (max-width: 600px) { margin-left: 0; }
   
   &:focus {
     outline:0;
@@ -38,15 +49,22 @@ const SocialFooter = styled.div`
   ${UnstyledLink} {
     margin: 4px;
     font-size: ${ ({ theme: { fontSizes }}) => fontSizes.normal };
-    
-    @media (max-width: 550px) {
-      display: block;
-    }
+
   }
   
-  @media (max-width: 550px) {
-      right: 10px;
+  @media (max-width: 600px) {
+    position: static;
+    > div { display: flex; align-items: center; gap: 4px; }
+    ${UnstyledLink} {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      margin: 0;
+      font-size: 18px;
     }
+  }
 `;
 
 function NavBar(props) {

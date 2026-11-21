@@ -17,18 +17,20 @@ export default function Masonry({ children, collections = false }) {
     const layout = () => {
       const width = element.clientWidth;
       const columns = width < 560 ? 1 : width < 900 ? 2 : 3;
-      const gap = width < 560 ? 28 : collections ? 28 : 22;
-      const itemWidth = (width - gap * (columns - 1)) / columns;
+      const columnGap = 36;
+      // Captions already add space below each image, so keep row gaps tighter.
+      const rowGap = width < 560 ? 28 : collections ? 24 : 22;
+      const itemWidth = (width - columnGap * (columns - 1)) / columns;
       const heights = Array(columns).fill(0);
       Array.from(element.children).forEach((child, index) => {
         const column = index < columns ? index : heights.indexOf(Math.min(...heights));
         child.style.width = `${itemWidth}px`;
         child.style.position = 'absolute';
-        child.style.left = `${column * (itemWidth + gap)}px`;
+        child.style.left = `${column * (itemWidth + columnGap)}px`;
         child.style.top = `${heights[column]}px`;
-        heights[column] += child.getBoundingClientRect().height + gap;
+        heights[column] += child.getBoundingClientRect().height + rowGap;
       });
-      element.style.height = `${Math.max(0, ...heights) - gap}px`;
+      element.style.height = `${Math.max(0, ...heights) - rowGap}px`;
     };
     const schedule = () => { cancelAnimationFrame(frame); frame = requestAnimationFrame(layout); };
     const observer = typeof ResizeObserver !== 'undefined' ? new ResizeObserver(schedule) : null;

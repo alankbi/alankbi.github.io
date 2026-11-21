@@ -9,6 +9,12 @@ import Content from './components/layout/Content';
 
 const Container = styled.div`
   font-family: ${ ({ theme }) => theme.font };
+  @media (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-height: 100svh;
+  }
 `;
 
 class App extends Component {

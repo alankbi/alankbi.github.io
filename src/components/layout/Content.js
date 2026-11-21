@@ -51,6 +51,14 @@ const StyledContent = styled.div`
     left: 0;
   }
   
+  @media (max-width: 600px) {
+    flex: 1;
+    margin-bottom: 32px;
+    // Let the active page set the height so the mobile footer follows it.
+    section.route-section { position: relative; }
+    section.route-section.fade-exit { position: absolute; }
+  }
+
   @media (max-width: 500px) {
     width: 90%;
   }
