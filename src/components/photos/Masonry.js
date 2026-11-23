@@ -7,7 +7,7 @@ const Wall = styled.div`
   > * { box-sizing: border-box; min-width: 0; margin: 0; }
 `;
 
-// Keep DOM/tab order intact and prefer left-to-right placement for collection covers.
+// Keep DOM/tab order intact and prefer left-to-right placement unless a column falls far behind.
 // Observe the cards as well as the wall so late-loading images reflow naturally.
 export default function Masonry({ children, collections = false }) {
   const wall = useRef(null);
@@ -22,23 +22,23 @@ export default function Masonry({ children, collections = false }) {
       const rowGap = width < 560 ? 28 : collections ? 24 : 22;
       const itemWidth = (width - columnGap * (columns - 1)) / columns;
       const heights = Array(columns).fill(0);
-      let nextColumn = 0;
       Array.from(element.children).forEach((child, index) => {
         child.style.width = `${itemWidth}px`;
         child.style.position = 'absolute';
         const cardHeight = child.getBoundingClientRect().height;
-        let column = index;
+        // Keep the preferred column tied to the photo's position in the sequence.
+        let column = index % columns;
         if (index >= columns) {
           const shortest = heights.indexOf(Math.min(...heights));
-          const heightDifference = heights[nextColumn] - heights[shortest];
-          column = collections && heightDifference <= cardHeight / 2 ? nextColumn : shortest;
+          if (heights[column] - heights[shortest] > cardHeight / 2) {
+            column = shortest;
+          }
         }
 
         const top = heights[column];
         child.style.left = `${column * (itemWidth + columnGap)}px`;
         child.style.top = `${top}px`;
         heights[column] = top + cardHeight + rowGap;
-        nextColumn = (column + 1) % columns;
       });
       element.style.height = `${Math.max(0, Math.max(...heights) - rowGap)}px`;
     };
