@@ -23,25 +23,34 @@ export default function Masonry({ children, collections = false }) {
       const itemWidth = (width - columnGap * (columns - 1)) / columns;
       const heights = Array(columns).fill(0);
       const previousCardHeights = Array(columns).fill(0);
-      let availableColumns = [];
-      Array.from(element.children).forEach((child, index) => {
+      const columnsInOrder = heights.map((_, column) => column);
+      let pendingColumns = [];
+      Array.from(element.children).forEach(child => {
         child.style.width = `${itemWidth}px`;
         child.style.position = 'absolute';
         const cardHeight = child.getBoundingClientRect().height;
-        if (index % columns === 0) {
-          availableColumns = Array.from({ length: columns }, (_, column) => column);
+        const shortestTop = Math.min(...heights);
+
+        // Keep deferred columns in play. A used column can rejoin as soon as
+        // its next slot is level with the shortest, within one vertical gap.
+        pendingColumns = columnsInOrder.filter(column =>
+          !pendingColumns.length || pendingColumns.includes(column) || heights[column] - shortestTop <= rowGap
+        );
+        let column = pendingColumns[0];
+        const shortestPending = pendingColumns.reduce((best, next) =>
+          heights[next] < heights[best] ? next : best);
+        if (heights[column] - heights[shortestPending] > previousCardHeights[column] / 2) {
+          column = shortestPending;
         }
 
-        // Fill each column once per pass. A balancing move defers the taller
-        // column until later in this pass, so it cannot leave a column empty.
-        let column = availableColumns[0];
-        const shortest = availableColumns.reduce((candidate, next) =>
-          heights[next] < heights[candidate] ? next : candidate);
-        const threshold = previousCardHeights[column] / 2;
-        if (heights[column] - heights[shortest] > threshold) {
-          column = shortest;
+        // Use the actual incoming image height, excluding its caption. Only skip
+        // the preferred slot if the shorter column saves at least 75% of an image.
+        const image = child.querySelector('img');
+        const imageHeight = (image && image.getBoundingClientRect().height) || cardHeight;
+        if (imageHeight > 0 && heights[column] - shortestTop >= 0.75 * imageHeight) {
+          column = heights.indexOf(shortestTop);
         }
-        availableColumns = availableColumns.filter(candidate => candidate !== column);
+        pendingColumns = pendingColumns.filter(next => next !== column);
 
         const top = heights[column];
         child.style.left = `${column * (itemWidth + columnGap)}px`;

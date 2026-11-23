@@ -17,10 +17,14 @@ afterEach(() => {
   jest.restoreAllMocks();
 });
 
-function placeCards(heights, collections = false) {
+function placeCards(heights, collections = false, captionHeight = 0) {
   const { container } = render(
     <Masonry collections={collections}>
-      {heights.map((height, index) => <div key={index} data-height={height} />)}
+      {heights.map((height, index) => (
+        <div key={index} data-height={height}>
+          <img alt="" data-height={height - captionHeight} />
+        </div>
+      ))}
     </Masonry>
   );
   const wall = container.firstChild;
@@ -37,7 +41,7 @@ test.each([960, 1200, 1440])('Iceland fills all three columns in order at grid w
   ];
   const cardWidth = (width - 72) / 3;
   const heights = dimensions.map(([w, h]) => cardWidth * h / w + 29);
-  const { cards, wall } = placeCards(heights);
+  const { cards, wall } = placeCards(heights, false, 29);
   expect(cards.map(card => parseFloat(card.style.left))).toEqual(
     [0, 1, 2, 0, 1, 2, 0, 1, 2].map(column => column * (cardWidth + 36))
   );
@@ -51,12 +55,12 @@ test.each([960, 1200, 1440])('Iceland fills all three columns in order at grid w
 });
 
 test('a gap equal to half the previous photo height keeps left-to-right order', () => {
-  const { cards } = placeCards([400, 600, 300, 300, 300, 300]);
+  const { cards } = placeCards([400, 600, 300, 300, 500, 300]);
   expect(cards.map(card => parseFloat(card.style.left))).toEqual([0, 412, 824, 0, 412, 824]);
 });
 
-test('balancing a gap over 50% still fills each column once in that pass', () => {
-  const { cards } = placeCards([400, 602, 300, 300, 300, 300]);
+test('a gap over 50% defers the taller pending column', () => {
+  const { cards } = placeCards([400, 602, 300, 300, 500, 300]);
   expect(cards.map(card => parseFloat(card.style.left))).toEqual([0, 412, 824, 0, 824, 412]);
 });
 
@@ -77,4 +81,25 @@ test('mobile stacks cards with the existing spacing', () => {
   expect(cards.map(card => parseFloat(card.style.left))).toEqual([0, 0, 0]);
   expect(cards.map(card => parseFloat(card.style.top))).toEqual([0, 328, 756]);
   expect(wall.style.height).toBe('956px');
+});
+
+const chinaRatios = [600, 1067, 533, 1200, 1200, 1200, 533, 533].map(h => h / 800);
+const nycRatios = [533, 1200, 1200, 1200, 533, 1200, 1200].map(h => h / 800);
+
+const lincolnParkRatios = [1200, 524, 1272, 584, 486, 1200, 1200, 521, 1200, 1200, 1023].map(h => h / 800);
+
+test.each([
+  ['Lincoln Park', 3, lincolnParkRatios, [900, 1050, 1200, 1440], [1, 2, 3, 2, 1, 2, 3, 1, 1, 2, 3]],
+  ['China', 3, chinaRatios, [900, 1200, 1440], [1, 2, 3, 1, 2, 3, 1, 3]],
+  ['China', 2, chinaRatios, [560, 700, 899], [1, 2, 1, 2, 1, 2, 1, 1]],
+  ['NYC', 2, nycRatios, [560, 700, 899], [1, 2, 1, 2, 1, 1, 2]],
+])('%s respects image proportions with %i columns', (name, columns, ratios, widths, expected) => {
+  for (const gridWidth of widths) {
+    width = gridWidth;
+    const stride = (width + 36) / columns;
+    const heights = ratios.map(ratio => (stride - 36) * ratio + 29);
+    const { cards } = placeCards(heights, false, 29);
+    expect(cards.map(card => Math.round(parseFloat(card.style.left) / stride) + 1)).toEqual(expected);
+    cleanup();
+  }
 });
