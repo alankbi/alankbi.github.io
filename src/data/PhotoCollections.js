@@ -1,4 +1,20 @@
 export default {
+  '2026-09/iceland': {
+    title: 'Iceland',
+    subtitle: 'September 2026',
+    imageFolder: '202609_iceland',
+    content: [
+      'DSCF9941.jpg',
+      'DSCF9945.jpg',
+      'DSCF9952.jpg',
+      'IMG_1845.jpg',
+      'DSCF0036.jpg',
+      'DSCF0029.jpg',
+      'IMG_2098.jpg',
+      'IMG_2265.jpg',
+      'IMG_2219.jpg',
+    ]
+  },
   '2025-05/china': {
     title: 'China',
     subtitle: 'Visiting China for the first time in 15+ years.',
