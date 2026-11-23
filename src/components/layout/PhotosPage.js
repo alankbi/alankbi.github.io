@@ -15,10 +15,12 @@ const CollectionHeader = styled.header`
 const Tile = styled(Link)`
   display: block; padding: 0; border: 0; background: none; color: inherit;
   text-align: left; text-decoration: none; cursor: pointer; font: inherit;
-  > span { display: block; padding: 12px 0 4px; color: #888; font-size: 11px; letter-spacing: .08em; }
-  img { transition: opacity .2s; }
-  &:hover img { opacity: .85; }
+  @media (hover: hover) and (pointer: fine) {
+    img { transition: opacity 220ms ease; }
+    &:hover img { opacity: .87; }
+  }
   @media (prefers-reduced-motion: reduce) { img { transition: none; } }
+  > span { display: block; padding: 12px 0 4px; color: #888; font-size: 11px; letter-spacing: .08em; }
 `;
 const ViewerChrome = createGlobalStyle`
   .navbar, .footer { display: none; }

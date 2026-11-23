@@ -9,8 +9,10 @@ const Card = styled(Link)`
   display: block;
   text-decoration: none;
   color: inherit;
-  img { transition: filter .25s ease; }
-  &:hover img { filter: brightness(.9); }
+  @media (hover: hover) and (pointer: fine) {
+    img { transition: filter 220ms ease; }
+    &:hover img { filter: brightness(.91); }
+  }
   @media (prefers-reduced-motion: reduce) { img { transition: none; } }
 `;
 const Caption = styled.div`
