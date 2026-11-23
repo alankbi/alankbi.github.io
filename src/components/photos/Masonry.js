@@ -22,23 +22,32 @@ export default function Masonry({ children, collections = false }) {
       const rowGap = width < 560 ? 28 : collections ? 24 : 22;
       const itemWidth = (width - columnGap * (columns - 1)) / columns;
       const heights = Array(columns).fill(0);
+      const previousCardHeights = Array(columns).fill(0);
+      let availableColumns = [];
       Array.from(element.children).forEach((child, index) => {
         child.style.width = `${itemWidth}px`;
         child.style.position = 'absolute';
         const cardHeight = child.getBoundingClientRect().height;
-        // Keep the preferred column tied to the photo's position in the sequence.
-        let column = index % columns;
-        if (index >= columns) {
-          const shortest = heights.indexOf(Math.min(...heights));
-          if (heights[column] - heights[shortest] > cardHeight / 2) {
-            column = shortest;
-          }
+        if (index % columns === 0) {
+          availableColumns = Array.from({ length: columns }, (_, column) => column);
         }
+
+        // Fill each column once per pass. A balancing move defers the taller
+        // column until later in this pass, so it cannot leave a column empty.
+        let column = availableColumns[0];
+        const shortest = availableColumns.reduce((candidate, next) =>
+          heights[next] < heights[candidate] ? next : candidate);
+        const threshold = previousCardHeights[column] / 2;
+        if (heights[column] - heights[shortest] > threshold) {
+          column = shortest;
+        }
+        availableColumns = availableColumns.filter(candidate => candidate !== column);
 
         const top = heights[column];
         child.style.left = `${column * (itemWidth + columnGap)}px`;
         child.style.top = `${top}px`;
         heights[column] = top + cardHeight + rowGap;
+        previousCardHeights[column] = cardHeight;
       });
       element.style.height = `${Math.max(0, Math.max(...heights) - rowGap)}px`;
     };
