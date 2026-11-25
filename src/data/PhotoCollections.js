@@ -1,7 +1,7 @@
 export default {
   '2026-09/iceland': {
     title: 'Iceland',
-    subtitle: 'September 2026',
+    subtitle: 'Reykjavík · Snæfellsnes · Golden Circle · Vík · Skaftafell · Höfn',
     imageFolder: '202609_iceland',
     content: [
       'DSCF9941.jpg',
