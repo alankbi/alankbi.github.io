@@ -61,9 +61,13 @@ const PhotoOverlay = styled.div`
 const Slide = styled.div`
   position: absolute; top: 0; left: 0; width: 100%; height: var(--photo-height, 100vh);
   opacity: 0; pointer-events: none;
-  &[data-active='true'] { pointer-events: auto; }
-  > a { display: block; position: relative; width: 100%; height: 100%; }
-  img { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: contain; user-select: none; -webkit-user-drag: none; }
+  > a { display: block; position: relative; width: 100%; height: 100%; pointer-events: none; }
+  img {
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    display: block; width: auto; height: auto; max-width: 100%; max-height: 100%;
+    pointer-events: none; user-select: none; -webkit-user-drag: none;
+  }
+  &[data-active='true'] img { pointer-events: auto; }
 `;
 const LoadingMessage = styled.span`
   position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
